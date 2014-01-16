@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;65_UI_ListView/res/layout/activity_main.xml&apos; to &apos;my_list_view.xml&apos;" description="Rename resource &apos;activity_main.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="res/layout/activity_main.xml" name="my_list_view.xml" stamp="1388628279573" updateReferences="true"/>
+</session>

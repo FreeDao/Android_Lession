@@ -1,0 +1,567 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ga.js"></script><script type="text/javascript" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/encoder.js"></script><script async="" type="text/javascript" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/gpt.js"></script>
+
+<title>浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园</title>
+<link type="text/css" rel="stylesheet" href="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/blog-common.css">
+<link id="MainCss" type="text/css" rel="stylesheet" href="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/style.css">
+<link title="RSS" type="application/rss+xml" rel="alternate" href="http://www.cnblogs.com/wisekingokok/rss">
+<link title="RSD" type="application/rsd+xml" rel="EditURI" href="http://www.cnblogs.com/wisekingokok/rsd.xml">
+<link type="application/wlwmanifest+xml" rel="wlwmanifest" href="http://www.cnblogs.com/wisekingokok/wlwmanifest.xml">
+<script src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/jquery.js" type="text/javascript"></script>  
+<script type="text/javascript">var currentBlogApp = 'wisekingokok';</script>
+<script src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/blog-common.js" type="text/javascript"></script>
+</head>
+<body ryt11864="1">
+<a name="top"></a>
+<!--PageBeginHtml Block Begin-->
+<img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/32eb241da00ab49982a9e37155e008a3" width="1" height="1" border="0">
+<!--PageBeginHtml Block End-->
+
+<!--done-->
+<div id="home">
+<div id="header">
+	<div id="blogTitle">
+	<a id="lnkBlogLogo" href="http://www.cnblogs.com/wisekingokok/"><img id="blogLogo" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/logo.gif" alt="返回主页"></a>			
+		
+<!--done-->
+<h1><a id="Header1_HeaderTitle" class="headermaintitle" href="http://www.cnblogs.com/wisekingokok/">Android档案</a></h1>
+<h2>分享方方面面与Android相关的技术、新闻、资讯、应用等信息。</h2>
+
+
+
+		
+	</div><!--end: blogTitle 博客的标题和副标题 -->
+</div><!--end: header 头部 -->
+
+<div id="main">
+	<div id="mainContent">
+	<div class="forFlow">
+		<div id="navigator">
+			
+<!--done-->
+			<ul id="navList">
+				<li><a id="MyLinks1_HomeLink" class="menu" href="http://www.cnblogs.com/">博客园</a></li>
+				<li><a id="MyLinks1_IngLink" class="menu" href="http://home.cnblogs.com/ing/">闪存</a></li>
+				<li><a id="MyLinks1_MyHomeLink" class="menu" href="http://www.cnblogs.com/wisekingokok/">首页</a></li>
+				<li><a id="MyLinks1_NewPostLink" class="menu" rel="nofollow" href="http://www.cnblogs.com/wisekingokok/admin/EditPosts.aspx?opt=1">新随笔</a></li>
+				<li><a id="MyLinks1_ContactLink" accesskey="9" class="menu" rel="nofollow" href="http://space.cnblogs.com/msg/send/%e7%86%8a%e7%8c%ab82">联系</a></li>
+				<li><a id="MyLinks1_Admin" class="menu" rel="nofollow" href="http://www.cnblogs.com/wisekingokok/admin/EditPosts.aspx">管理</a></li>
+				<li><a id="MyLinks1_Syndication" class="menu" href="http://www.cnblogs.com/wisekingokok/rss">订阅</a>
+				<a id="MyLinks1_XMLLink" class="aHeaderXML" href="http://www.cnblogs.com/wisekingokok/rss"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/xml.gif" alt="订阅"></a></li>
+			</ul>
+
+
+			<div class="blogStats">
+				
+				
+<!--done-->
+随笔- 62&nbsp;
+文章- 0&nbsp;
+评论- 153&nbsp;
+
+				
+			</div><!--end: blogStats -->
+		</div><!--end: navigator 博客导航栏 -->
+		
+
+<!--done-->
+<div id="topics">
+	<div class="post">
+		<h1 class="postTitle">
+			<a id="cb_post_title_url" class="postTitle2" href="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园.htm">浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout</a>
+		</h1>
+		<div class="clear"></div>
+		<div class="postBody">
+			<div id="cnblogs_post_body"><p style="text-align: left;">　　Android的界面是有布局和组件协同完成的，布局好比是建筑里的框架，而组件则相当于建筑里的砖瓦。组件按照布局的要求依次排列，就组成了用户所看见的界面。Android的五大布局分别是LinearLayout（线性布局）、FrameLayout（单帧布局）、RelativeLayout（相对布局）、AbsoluteLayout（绝对布局）和TableLayout（表格布局）。</p>
+<p>　　<strong>LinearLayout：</strong></p>
+<p>　　LinearLayout按照垂直或者水平的顺序依次排列子元素，每一个子元素都位于前一个元素之后。如果是垂直排列，那么将是一个N行单列的结构，每一行只会有一个元素，而不论这个元素的宽度为多少；如果是水平排列，那么将是一个单行N列的结构。如果搭建两行两列的结构，通常的方式是先垂直排列两个元素，每一个元素里再包含一个LinearLayout进行水平排列。</p>
+<p>　　LinearLayout中的子元素属性android:layout_weight生效，它用于描述该子元素在剩余空间中占有的大小比例。加入一行只有一个文本框，那么它的默认值就为0，如果一行中有两个等长的文本框，那么他们的android:layout_weight值可以是同为1。如果一行中有两个不等长的文本框，那么他们的android:layout_weight值分别为1和2，那么第一个文本框将占据剩余空间的三分之二，第二个文本框将占据剩余空间中的三分之一。android:layout_weight遵循数值越小，重要度越高的原则。显示效果如下：</p>
+<p>&nbsp;<img style="display: block; margin-left: auto; margin-right: auto;" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/2011082312502953.jpg" alt=""></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;6f1200ed-6fc9-413c-beed-d6fc45f282a4&#39;)"><img id="code_img_closed_6f1200ed-6fc9-413c-beed-d6fc45f282a4" class="code_img_closed" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ContractedBlock.gif" alt="" style="display: none;"><img id="code_img_opened_6f1200ed-6fc9-413c-beed-d6fc45f282a4" class="code_img_opened" style="" onclick="cnblogs_code_hide(&#39;6f1200ed-6fc9-413c-beed-d6fc45f282a4&#39;,event)" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ExpandedBlockStart.gif" alt=""><span class="cnblogs_code_collapse" style="display: none;">LinearLayout</span>
+<div id="cnblogs_code_open_6f1200ed-6fc9-413c-beed-d6fc45f282a4" class="cnblogs_code_hide" style="display: block;"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;">1</span> <span style="color: #0000ff;">&lt;?</span><span style="color: #ff00ff;">xml version="1.0" encoding="utf-8"</span><span style="color: #0000ff;">?&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">2</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">LinearLayout </span><span style="color: #ff0000;">xmlns:android</span><span style="color: #0000ff;">="http://schemas.android.com/apk/res/android"</span><span style="color: #ff0000;"> android:orientation</span><span style="color: #0000ff;">="vertical"</span><span style="color: #ff0000;"> android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">3</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView  </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="wrap_content"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#ff000000"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="@string/hello"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">4</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">LinearLayout </span><span style="color: #ff0000;">android:orientation</span><span style="color: #0000ff;">="horizontal"</span><span style="color: #ff0000;"> android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">5</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView  </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="wrap_content"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#ff654321"</span><span style="color: #ff0000;"> android:layout_weight</span><span style="color: #0000ff;">="1"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="1"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">6</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView  </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="wrap_content"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#fffedcba"</span><span style="color: #ff0000;"> android:layout_weight</span><span style="color: #0000ff;">="2"</span><span style="color: #ff0000;">  android:text</span><span style="color: #0000ff;">="2"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">7</span> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">LinearLayout</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">8</span> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">LinearLayout</span><span style="color: #0000ff;">&gt;</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+</div>
+<p>&nbsp;</p>
+<p><strong>　　FrameLayout：</strong></p>
+<p>　　FrameLayout<span style="font-family: 宋体; color: black; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt;" lang="ZH-CN">是五大布局中最简单的一个布局</span><span style="font-family: 宋体; color: black; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt;" lang="ZH-CN">，在这个布局中，整个界面被当成一块空白备用区域，所有的子元素都不能被指定放置的位置，它们统统放于这块区域的左上角，并且后面的子元素直接覆盖在前面的子元素之上，将前面的子元素部分和全部遮挡。显示效果如下，第一个TextView被第二个TextView完全遮挡，第三个TextView遮挡了第二个TextView的部分位置。</span></p>
+<p>&nbsp;</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/2011082313041852.jpg" alt=""></p>
+<p>&nbsp;</p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;7c0620cb-2bda-401a-b25e-9bf3ab5a399f&#39;)"><img id="code_img_closed_7c0620cb-2bda-401a-b25e-9bf3ab5a399f" class="code_img_closed" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ContractedBlock.gif" alt="" style="display: none;"><img id="code_img_opened_7c0620cb-2bda-401a-b25e-9bf3ab5a399f" class="code_img_opened" style="display: inline;" onclick="cnblogs_code_hide(&#39;7c0620cb-2bda-401a-b25e-9bf3ab5a399f&#39;,event)" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ExpandedBlockStart.gif" alt=""><span class="cnblogs_code_collapse" style="display: none;">FrameLayout</span>
+<div id="cnblogs_code_open_7c0620cb-2bda-401a-b25e-9bf3ab5a399f" class="cnblogs_code_hide" style="display: block;"><div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div>
+<pre><span style="color: #008080;">1</span> <span style="color: #0000ff;">&lt;?</span><span style="color: #ff00ff;">xml version="1.0" encoding="utf-8"</span><span style="color: #0000ff;">?&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">2</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">FrameLayout </span><span style="color: #ff0000;">xmlns:android</span><span style="color: #0000ff;">="http://schemas.android.com/apk/res/android"</span><span style="color: #ff0000;"> android:orientation</span><span style="color: #0000ff;">="vertical"</span><span style="color: #ff0000;"> android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">3</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#ff000000"</span><span style="color: #ff0000;"> android:gravity</span><span style="color: #0000ff;">="center"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="1"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">4</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#ff654321"</span><span style="color: #ff0000;"> android:gravity</span><span style="color: #0000ff;">="center"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="2"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">5</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#fffedcba"</span><span style="color: #ff0000;"> android:gravity</span><span style="color: #0000ff;">="center"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="3"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">6</span> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">FrameLayout</span><span style="color: #0000ff;">&gt;</span></pre>
+<div class="cnblogs_code_toolbar"><span class="cnblogs_code_copy"><a href="javascript:void(0);" onclick="copyCnblogsCode(this)" title="复制代码"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/copycode.gif" alt="复制代码"></a></span></div></div>
+</div>
+<p>&nbsp;</p>
+<p><strong>　　AbsoluteLayout：</strong></p>
+<p>　　AbsoluteLayout<span style="font-family: 宋体; color: black; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-ascii-font-family: Arial; mso-hansi-font-family: Arial; mso-bidi-font-family: Arial; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt;" lang="ZH-CN">是绝对位置布局</span><span style="font-family: 宋体; color: black; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt;" lang="ZH-CN">。在此布局中的子元素的android:layout_x和android:layout_y属性将生效，用于描述该子元素的坐标位置。屏幕左上角为坐标原点（0,0），第一个0代表横坐标，向右移动此值增大，第二个0代表纵坐标，向下移动，此值增大。在此布局中的子元素可以相互重叠。在实际开发中，通常不采用此布局格式，因为它的界面代码过于刚性，以至于有可能不能很好的适配各种终端。显示效果如下：</span></p>
+<p><span style="font-family: 宋体; color: black; font-size: 10.5pt; mso-ansi-language: EN-US; mso-fareast-language: ZH-CN; mso-bidi-language: AR-SA; mso-bidi-font-family: 宋体; mso-bidi-font-size: 11.0pt; mso-font-kerning: 1.0pt;" lang="ZH-CN"><img style="display: block; margin-left: auto; margin-right: auto;" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/2011082313232885.jpg" alt=""></span></p>
+<div class="cnblogs_code" onclick="cnblogs_code_show(&#39;e3b966c1-afaa-443e-a29c-0bdaa4734058&#39;)"><img id="code_img_closed_e3b966c1-afaa-443e-a29c-0bdaa4734058" class="code_img_closed" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ContractedBlock.gif" alt=""><img id="code_img_opened_e3b966c1-afaa-443e-a29c-0bdaa4734058" class="code_img_opened" style="display: none;" onclick="cnblogs_code_hide(&#39;e3b966c1-afaa-443e-a29c-0bdaa4734058&#39;,event)" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/ExpandedBlockStart.gif" alt=""><span class="cnblogs_code_collapse">AbsoluteLayout</span>
+<div id="cnblogs_code_open_e3b966c1-afaa-443e-a29c-0bdaa4734058" class="cnblogs_code_hide">
+<pre><span style="color: #008080;">1</span> <span style="color: #0000ff;">&lt;?</span><span style="color: #ff00ff;">xml version="1.0" encoding="utf-8"</span><span style="color: #0000ff;">?&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">2</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">AbsoluteLayout </span><span style="color: #ff0000;">xmlns:android</span><span style="color: #0000ff;">="http://schemas.android.com/apk/res/android"</span><span style="color: #ff0000;"> android:orientation</span><span style="color: #0000ff;">="vertical"</span><span style="color: #ff0000;"> android:layout_width</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="fill_parent"</span><span style="color: #0000ff;">&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">3</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#ffffffff"</span><span style="color: #ff0000;"> android:gravity</span><span style="color: #0000ff;">="center"</span><span style="color: #ff0000;"> android:layout_x</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:layout_y</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="1"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">4</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#ff654321"</span><span style="color: #ff0000;"> android:gravity</span><span style="color: #0000ff;">="center"</span><span style="color: #ff0000;"> android:layout_x</span><span style="color: #0000ff;">="25dp"</span><span style="color: #ff0000;"> android:layout_y</span><span style="color: #0000ff;">="25dp"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="2"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">5</span> <span style="color: #0000ff;">&lt;</span><span style="color: #800000;">TextView  </span><span style="color: #ff0000;">android:layout_width</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:layout_height</span><span style="color: #0000ff;">="50dp"</span><span style="color: #ff0000;"> android:background</span><span style="color: #0000ff;">="#fffedcba"</span><span style="color: #ff0000;"> android:gravity</span><span style="color: #0000ff;">="center"</span><span style="color: #ff0000;"> android:layout_x</span><span style="color: #0000ff;">="125dp"</span><span style="color: #ff0000;"> android:layout_y</span><span style="color: #0000ff;">="125dp"</span><span style="color: #ff0000;"> android:text</span><span style="color: #0000ff;">="3"</span><span style="color: #0000ff;">/&gt;</span><span style="color: #000000;"><br></span><span style="color: #008080;">6</span> <span style="color: #0000ff;">&lt;/</span><span style="color: #800000;">AbsoluteLayout</span><span style="color: #0000ff;">&gt;</span></pre>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>　　</p>
+<p><strong>　　其它布局结构请参看：</strong>&nbsp;<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/24/2152004.html" target="_blank">浅谈Android五大布局（二）——RelativeLayout和TableLayout</a>。</p>
+<p>欢迎加入成都-Android群：<a href="http://shang.qq.com/wpa/qunwpa?idkey=f2b7d86c66451ebc7934ed173b816407d31e7bfdf3a8bbe70d9c948cfb672920" target="_blank"><img title="成都 - Android群" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/group.png" alt="成都 - Android群" border="0"></a></p>
+<p><br><br><br>================================================================= <br><span style="font-size: 14px; font-weight: bold; margin-left: 18px;">亲，如果您觉得本人此博文对你有用，请不要吝啬自己的鼠标，给此博文一个“推荐”吧。</span> <br><br><span style="font-size: 14px; font-weight: bold; margin-left: 18px;">本博文系本博客主原创，版权归本博客主所有，如需转载，请注明转载地址。</span> <br><span style="font-size: 14px; font-weight: bold; margin-left: 18px;">博客原始地址：<a href="http://wisekingokok.cnblogs.com/">wisekingokok.cnblogs.com</a></span> <br>================================================================= <br><br></p></div><div id="MySignature"></div>
+<div class="clear"></div>
+<div id="blog_post_info_block">
+<div id="blog_post_info"><div id="BlogPostCategory">分类: <a href="http://www.cnblogs.com/wisekingokok/category/318009.html">Android技术</a></div>
+<div id="EntryTag">标签: <a href="http://www.cnblogs.com/wisekingokok/tag/android/">android</a>, <a href="http://www.cnblogs.com/wisekingokok/tag/%E5%B8%83%E5%B1%80/">布局</a>, <a href="http://www.cnblogs.com/wisekingokok/tag/LinearLayout/">LinearLayout</a>, <a href="http://www.cnblogs.com/wisekingokok/tag/FrameLayout/">FrameLayout</a>, <a href="http://www.cnblogs.com/wisekingokok/tag/AbsoulteLayout/">AbsoulteLayout</a></div>
+<div id="green_channel">
+绿色通道：
+<a href="javascript:void(0);" id="green_channel_digg" onclick="DiggIt(cb_entryId,cb_blogId,1);green_channel_success(this,&#39;谢谢推荐！&#39;);">好文要顶</a>
+<a id="green_channel_follow" onclick="c_follow();" href="javascript:void(0);">关注我</a>
+<a id="green_channel_favorite" onclick="AddToWz(cb_entryId);return false;" href="javascript:void(0);">收藏该文</a><a id="green_channel_contact" href="http://space.cnblogs.com/msg/send/%e7%86%8a%e7%8c%ab82" target="_blank">与我联系</a>
+<a id="green_channel_weibo" href="javascript:void(0);" title="分享至新浪微博" onclick="ShareToTsina()"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/icon_weibo_24.png" alt=""></a>
+</div>
+<div id="digg_block">
+<div id="author_profile">
+<div id="author_profile_info" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/wisekingokok/" target="_blank"><img src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/u324523.jpg" class="author_avatar" alt=""></a>
+<div id="author_profile_detail" class="author_profile_info">
+<a href="http://home.cnblogs.com/u/wisekingokok/">熊猫82</a><br>
+<a href="http://home.cnblogs.com/u/wisekingokok/followees">关注 - 16</a><br>
+<a href="http://home.cnblogs.com/u/wisekingokok/followers">粉丝 - 198</a>
+</div>
+</div>
+<div class="clear"></div>
+<div id="author_profile_honor"></div>
+<div id="author_profile_follow">
+<a href="javascript:void(0);" onclick="c_follow();return false;">+加关注</a>
+</div>
+</div>
+<div id="div_digg">										
+	<div class="diggit" onclick="votePost(cb_entryId,&#39;Digg&#39;)"> 
+		<span class="diggnum" id="digg_count">30</span>
+	</div>
+	<div class="buryit" onclick="votePost(cb_entryId,&#39;Bury&#39;)"> 
+		<span class="burynum" id="bury_count">0</span>
+	</div>
+	<div class="clear"></div>	
+	<div class="diggword" id="digg_tips">
+    (请您对文章做出评价)
+    </div>	
+</div>
+</div></div>
+<div class="clear"></div>
+<div id="post_next_prev"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/22/2149847.html" class="p_n_p_prefix">« </a> 上一篇：<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/22/2149847.html" title="发布于2011-08-22 18:56">Intent中的四个重要属性——Action、Data、Category、Extras</a><br><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/24/2151665.html" class="p_n_p_prefix">» </a> 下一篇：<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/24/2151665.html" title="发布于2011-08-24 11:01">Android 所有版本区别总结（转）</a><br></div>
+</div>
+
+
+		</div>
+		<div class="postDesc">posted @ <span id="post-date">2011-08-23 13:27</span> <a href="http://www.cnblogs.com/wisekingokok/">熊猫82</a> 阅读(<span id="post_view_count">90840</span>) 评论(<span id="post_comment_count">15</span>)  <a href="http://www.cnblogs.com/wisekingokok/admin/EditPosts.aspx?postid=2150452" rel="nofollow">编辑</a> <a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#" onclick="AddToWz(2150452);return false;">收藏</a></div>
+	</div>
+	<script type="text/javascript">var allowComments=true,isLogined=false,cb_blogId=95179,cb_entryId=2150452,cb_blogApp=currentBlogApp,cb_blogUserGuid='1fb025db-73c8-e011-8ee0-842b2b196315',cb_entryCreatedDate='2011/8/23 13:27:00';loadViewCount(cb_entryId);</script>
+	
+</div><!--end: topics 文章、评论容器-->
+<a name="!comments"></a><div id="blog-comments-placeholder"><div id="comments_pager_top"></div>
+<!--done-->
+<br>
+<div class="feedback_area_title">评论</div>
+<div class="feedbackNoItems"></div>
+	
+
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2236294" class="layer">#1楼</a><a name="2236294" id="comment_anchor_2236294"></a> <span class="comment_date">2011-11-05 20:18</span> | <a id="a_comment_author_2236294" href="http://www.cnblogs.com/hongten/" target="_blank">Hongten</a> <a href="http://space.cnblogs.com/msg/send/Hongten" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2236294" class="blog_comment_body">　AbsoluteLayout：android不建议使用滴……为什么呢？</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2236294,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2236294,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2236294_avatar" style="display:none;">http://pic.cnitblog.com/face/284226/20130809195932.png</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2237797" class="layer">#2楼</a><a name="2237797" id="comment_anchor_2237797"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2011-11-07 17:48</span> | <a id="a_comment_author_2237797" href="http://www.cnblogs.com/wisekingokok/" target="_blank">熊猫82</a> <a href="http://space.cnblogs.com/msg/send/%e7%86%8a%e7%8c%ab82" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2237797" class="blog_comment_body"><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2236294" title="查看引用原文">引用</a></legend>Hongten：　AbsoluteLayout：android不建议使用滴……为什么呢？</fieldset><br>因为Android的终端机型十分多，每一款的分辨率，屏幕尺寸都有可能不一样，如果用AbsoluteLayout，可能导致在各个终端的显示效果不一致。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2237797,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2237797,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2237797_avatar" style="display:none;">http://pic.cnitblog.com/face/u324523.jpg?id=21145217</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2261235" class="layer">#3楼</a><a name="2261235" id="comment_anchor_2261235"></a> <span class="comment_date">2011-12-04 21:35</span> | <a id="ctl00_CommentList_NameLink_2" target="_blank">研究人[未注册用户]</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2261235" class="blog_comment_body">請問五大布局  可以混用嗎  要怎麼用</div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2278044" class="layer">#4楼</a><a name="2278044" id="comment_anchor_2278044"></a>[<span class="louzhu">楼主</span>] <span class="comment_date">2011-12-23 16:38</span> | <a id="a_comment_author_2278044" href="http://www.cnblogs.com/wisekingokok/" target="_blank">熊猫82</a> <a href="http://space.cnblogs.com/msg/send/%e7%86%8a%e7%8c%ab82" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2278044" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2261235" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2261235);">@</a>研究人<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2261235" title="查看引用原文">引用</a></legend>研究人：請問五大布局  可以混用嗎  要怎麼用</fieldset><br><br><br>完全可以嵌套使用</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2278044,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2278044,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2278044_avatar" style="display:none;">http://pic.cnitblog.com/face/u324523.jpg?id=21145217</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2468438" class="layer">#5楼</a><a name="2468438" id="comment_anchor_2468438"></a> <span class="comment_date">2012-09-10 11:16</span> | <a id="a_comment_author_2468438" href="http://www.cnblogs.com/kondoh/" target="_blank">康呵呵</a> <a href="http://space.cnblogs.com/msg/send/%e5%ba%b7%e5%91%b5%e5%91%b5" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2468438" class="blog_comment_body">AbsoluteLayout布局已经被API废弃了</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2468438,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2468438,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2468438_avatar" style="display:none;">http://pic.cnitblog.com/face/u348661.jpg?id=09163330</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2468440" class="layer">#6楼</a><a name="2468440" id="comment_anchor_2468440"></a> <span class="comment_date">2012-09-10 11:17</span> | <a id="a_comment_author_2468440" href="http://www.cnblogs.com/kondoh/" target="_blank">康呵呵</a> <a href="http://space.cnblogs.com/msg/send/%e5%ba%b7%e5%91%b5%e5%91%b5" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2468440" class="blog_comment_body">到现在也没弄明白FrameLayout是怎么用</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2468440,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2468440,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2468440_avatar" style="display:none;">http://pic.cnitblog.com/face/u348661.jpg?id=09163330</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2491789" class="layer">#7楼</a><a name="2491789" id="comment_anchor_2491789"></a> <span class="comment_date">2012-10-12 14:16</span> | <a id="a_comment_author_2491789" href="http://home.cnblogs.com/u/456026/" target="_blank">Jinks</a> <a href="http://space.cnblogs.com/msg/send/Jinks" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2491789" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2468440" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2468440);">@</a>康呵呵<br>在使用Fragment的时候可能会用到 但也是很简单的使用 基本上就是拿他当个最简单的布局来使用</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2491789,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2491789,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2522163" class="layer">#8楼</a><a name="2522163" id="comment_anchor_2522163"></a> <span class="comment_date">2012-11-01 19:07</span> | <a id="a_comment_author_2522163" href="http://www.cnblogs.com/mpqiqi/" target="_blank">八猫儿</a> <a href="http://space.cnblogs.com/msg/send/%e5%85%ab%e7%8c%ab%e5%84%bf" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2522163" class="blog_comment_body">有个面试官问我<br>LinearLayout 中怎么让两个元素重叠。。<br>我一直很困惑。求抱 LZ 大腿了。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2522163,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2522163,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2522163_avatar" style="display:none;">http://pic.cnitblog.com/face/u463273.jpg?id=01165621</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2522164" class="layer">#9楼</a><a name="2522164" id="comment_anchor_2522164"></a> <span class="comment_date">2012-11-01 19:09</span> | <a id="a_comment_author_2522164" href="http://www.cnblogs.com/mpqiqi/" target="_blank">八猫儿</a> <a href="http://space.cnblogs.com/msg/send/%e5%85%ab%e7%8c%ab%e5%84%bf" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2522164" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2468440" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2468440);">@</a>康呵呵<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2468440" title="查看引用原文">引用</a></legend>到现在也没弄明白FrameLayout是怎么用</fieldset><br><br>其实就是帧布局，每一个FrameLayout就像是那种胶片幻灯机用的那个透明胶片一样，可以一层一层叠加，最后放的在最上面。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2522164,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2522164,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2522164_avatar" style="display:none;">http://pic.cnitblog.com/face/u463273.jpg?id=01165621</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2526248" class="layer">#10楼</a><a name="2526248" id="comment_anchor_2526248"></a> <span class="comment_date">2012-11-07 13:30</span> | <a id="a_comment_author_2526248" href="http://www.cnblogs.com/coding-hundredOfYears/" target="_blank">百年coding</a> <a href="http://space.cnblogs.com/msg/send/%e7%99%be%e5%b9%b4coding" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2526248" class="blog_comment_body">一直没懂FrameLayout一般用在什么地方。。好像很少见到。。</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2526248,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2526248,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2596281" class="layer">#11楼</a><a name="2596281" id="comment_anchor_2596281"></a> <span class="comment_date">2013-01-09 15:27</span> | <a id="a_comment_author_2596281" href="http://www.cnblogs.com/jasperzhu/" target="_blank">JasperZhu</a> <a href="http://space.cnblogs.com/msg/send/JasperZhu" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2596281" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2522163" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2522163);">@</a>八猫儿<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2522163" title="查看引用原文">引用</a></legend>有个面试官问我<br>LinearLayout 中怎么让两个元素重叠。。<br>我一直很困惑。求抱 LZ 大腿了。</fieldset><br><br>把一个元素draw到另一个元素上</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2596281,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2596281,&#39;Bury&#39;,this)">反对(1)</a></div><span id="comment_2596281_avatar" style="display:none;">http://pic.cnitblog.com/face/u84272.jpg</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2608497" class="layer">#12楼</a><a name="2608497" id="comment_anchor_2608497"></a> <span class="comment_date">2013-01-26 23:51</span> | <a id="a_comment_author_2608497" href="http://www.cnblogs.com/vieri122/" target="_blank">vieri122</a> <a href="http://space.cnblogs.com/msg/send/vieri122" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2608497" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2596281" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2596281);">@</a>JasperZhu<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2596281" title="查看引用原文">引用</a></legend>@八猫儿<br><fieldset class="comment_quote"><legend>引用</legend>引用有个面试官问我<br>LinearLayout 中怎么让两个元素重叠。。<br>我一直很困惑。求抱 LZ 大腿了。</fieldset><br><br>把一个元素draw到另一个元素上</fieldset><br><br>我也有这个疑问，如何具体是如draw的，能详细说一下吗?谢谢</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2608497,&#39;Digg&#39;,this)">支持(1)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2608497,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2608497_avatar" style="display:none;">http://pic.cnitblog.com/face/u47059.jpg</span>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2712913" class="layer">#13楼</a><a name="2712913" id="comment_anchor_2712913"></a> <span class="comment_date">2013-06-25 14:35</span> | <a id="a_comment_author_2712913" href="http://home.cnblogs.com/u/276070/" target="_blank">hhb19900618</a> <a href="http://space.cnblogs.com/msg/send/hhb19900618" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2712913" class="blog_comment_body">不错，但是缺少了代码</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2712913,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2712913,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2738744" class="layer">#14楼</a><a name="2738744" id="comment_anchor_2738744"></a> <span class="comment_date">2013-07-30 10:35</span> | <a id="a_comment_author_2738744" href="http://home.cnblogs.com/u/540316/" target="_blank">frank_李</a> <a href="http://space.cnblogs.com/msg/send/frank_%e6%9d%8e" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2738744" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2608497" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2608497);">@</a>hhb19900618<br>@hhb19900618<br><fieldset class="comment_quote"><legend><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2608497" title="查看引用原文">引用</a></legend>不错，但是缺少了代码</fieldset><br>@vieri122<br><fieldset class="comment_quote"><legend>引用</legend>@JasperZhu<br><fieldset class="comment_quote"><legend>引用</legend>引用@八猫儿<br>引用引用有个面试官问我<br>LinearLayout 中怎么让两个元素重叠。。<br>我一直很困惑。求抱 LZ 大腿了。</fieldset><br><br>把一个元素draw到另一个元素上<br><br>我也有这个疑问，如何具体是如draw的，能详细说一下吗?谢谢</fieldset><br>两个元素用layout_margin等于负值可以实现两个元素重叠</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2738744,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2738744,&#39;Bury&#39;,this)">反对(0)</a></div>
+			</div>
+		</div>
+	
+		<div class="feedbackItem">
+			<div class="feedbackListSubtitle">
+				<div class="feedbackManage">
+					&nbsp;&nbsp;<span class="comment_actions"></span>
+				</div>
+				<a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2754797" class="layer">#15楼</a><a name="2754797" id="comment_anchor_2754797"></a><span id="comment-maxId" style="display:none;">2754797</span><span id="comment-maxDate" style="display:none;">2013/8/19 10:42:18</span> <span class="comment_date">2013-08-19 10:42</span> | <a id="a_comment_author_2754797" href="http://www.cnblogs.com/wangmars/" target="_blank">Powerful Man</a> <a href="http://space.cnblogs.com/msg/send/Powerful+Man" title="发送站内短消息" class="sendMsg2This">&nbsp;</a>
+			</div>
+			<div class="feedbackCon">
+				<div id="comment_body_2754797" class="blog_comment_body"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#2468440" title="查看所回复的评论" onclick="commentManager.renderComments(0,50,2468440);">@</a>康呵呵它是通过你定义个好几个FrameLayout，然后用tabhost来做一个例如选项卡，判断你点击哪个，然后对应的显示出指定的FrameLayout界面</div><div class="comment_vote"><a href="javascript:void(0);" class="comment_digg" onclick="return voteComment(2754797,&#39;Digg&#39;,this)">支持(0)</a><a href="javascript:void(0);" class="comment_bury" onclick="return voteComment(2754797,&#39;Bury&#39;,this)">反对(0)</a></div><span id="comment_2754797_avatar" style="display:none;">http://pic.cnitblog.com/face/554812/20130805160533.png</span>
+			</div>
+		</div>
+	<div id="comments_pager_bottom"></div></div><script type="text/javascript">var commentManager = new blogCommentManager();commentManager.renderComments(0);</script>
+<div id="comment_form" class="commentform">
+<a name="commentform"></a>
+<div id="divCommentShow"></div>
+<div id="comment_nav"><span id="span_refresh_tips"></span><a href="javascript:void(0);" id="lnk_RefreshComments" onclick="return RefreshCommentList();">刷新评论</a><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#" onclick="return RefreshPage();">刷新页面</a><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#top">返回顶部</a></div>
+<div id="comment_form_container"><div class="login_tips">注册用户登录后才能发表评论，请 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return login(&#39;commentform&#39;);">登录</a> 或 <a rel="nofollow" href="javascript:void(0);" class="underline" onclick="return register();">注册</a>，<a href="http://www.cnblogs.com/">访问</a>网站首页。</div></div>
+<div class="ad_text_commentbox" id="ad_text_under_commentbox"><a target="_blank" href="http://www.cnblogs.com/cmt/p/3471046.html">游戏开发者的福利：阿里云云服务器免费送</a></div>
+<div id="site_nav_under"><a href="http://www.cnblogs.com/" target="_blank" title="程序员的网上家园">博客园首页</a><a href="http://q.cnblogs.com/" target="_blank" title="程序员问答社区">博问</a><a href="http://news.cnblogs.com/" target="_blank" title="IT新闻">新闻</a><a href="http://home.cnblogs.com/ing/" target="_blank">闪存</a><a href="http://job.cnblogs.com/" target="_blank">程序员招聘</a><a href="http://kb.cnblogs.com/" target="_blank">知识库</a></div>
+<div id="ad_under_post_holder">
+
+<div id="google_ad_c1" class="c_ad_block">
+    <!-- cnblogs_blogpost_C1_sitehome -->
+    <div id="div-gpt-ad-1346480159711-0" style="width:300px; height:250px;">
+    
+    </div>
+</div>
+<div id="blog_news_kb"><div class="itnews c_ad_block"><b>最新IT新闻</b>:<br> ·  <a href="http://news.cnblogs.com/n/197058/" target="_blank">自带可编程键的游戏本曝光 或下月发布</a><br> ·  <a href="http://news.cnblogs.com/n/197057/" target="_blank">一个男人和一只狗 重现各种经典爱情场景</a><br> ·  <a href="http://news.cnblogs.com/n/197056/" target="_blank">2013 精选创业字句</a><br> ·  <a href="http://news.cnblogs.com/n/197055/" target="_blank">Steven Sinofsky眼中的2014：科技界最值得期待的一年</a><br> ·  <a href="http://news.cnblogs.com/n/197054/" target="_blank">Mars One 第一轮筛选结束，1058位幸运儿将继续争夺四个名额</a><br>» <a href="http://news.cnblogs.com/" title="IT新闻" target="_blank">更多新闻...</a></div><div class="itnews c_ad_block" id="kb_block"><b>最新知识库文章</b>:<br><div id="kb_recent"> ·  <a href="http://kb.cnblogs.com/page/196876/" target="_blank">程序员谈学习：我为什么要学习Linux?</a><br> ·  <a href="http://kb.cnblogs.com/page/196740/" target="_blank">从王博士说起</a><br> ·  <a href="http://kb.cnblogs.com/page/196448/" target="_blank">浅析深究什么是中间件</a><br> ·  <a href="http://kb.cnblogs.com/page/195372/" target="_blank">思考、学习新技术的原则和方式</a><br> ·  <a href="http://kb.cnblogs.com/page/193371/" target="_blank">云风：一个编程的自由人</a><br></div>» <a href="http://kb.cnblogs.com/" target="_blank">更多知识库文章...</a></div></div></div>
+<script type="text/javascript">
+var enableGoogleAd = true;
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+fixPostBodyFormat();
+loadAdUnderPost();
+</script>
+<div id="HistoryToday" class="c_ad_block"></div>
+<script type="text/javascript">
+loadBlogSignature();
+LoadPostInfoBlock(cb_blogId, cb_entryId, cb_blogApp, cb_blogUserGuid);
+GetPrevNextPost(cb_entryId, cb_blogId, cb_entryCreatedDate);
+GetHistoryToday(cb_blogId, cb_blogApp, cb_entryCreatedDate);
+</script>
+<script type="text/javascript">
+    $.ajax({ url: 'http://counter.cnblogs.com/blog/post/' + cb_entryId, type: 'get', dataType: 'script', cache: true });
+</script>
+</div>
+
+	</div><!--end: forFlow -->
+	</div><!--end: mainContent 主体内容容器-->
+
+	<div id="sideBar">
+		<div id="sideBarMain">
+			
+<!--done-->
+<div class="newsItem">
+<h3 class="catListTitle">公告</h3>
+	<div id="blog-news"><div id="profile_block">昵称：<a href="http://home.cnblogs.com/u/wisekingokok/">熊猫82</a><br>园龄：<a href="http://home.cnblogs.com/u/wisekingokok/" title="入园时间：2011-08-17">2年4个月</a><br>粉丝：<a href="http://home.cnblogs.com/u/wisekingokok/followers/">198</a><br>关注：<a href="http://home.cnblogs.com/u/wisekingokok/followees/">16</a><div id="p_b_follow"><a href="javascript:void(0);" onclick="cnblogs.UserManager.FollowBlogger(&#39;1fb025db-73c8-e011-8ee0-842b2b196315&#39;)">+加关注</a></div></div></div><script type="text/javascript">loadBlogNews();</script>
+</div>
+
+			<div id="calendar"><div id="blog-calendar" style="display:none"><table id="blogCalendar" class="Cal" cellspacing="0" cellpadding="0" title="日历">
+	<tbody><tr><td colspan="7"><table class="CalTitle" cellspacing="0">
+		<tbody><tr><td class="CalNextPrev"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2011/07/01&#39;);return false;">&lt;</a></td><td align="center">2011年8月</td><td class="CalNextPrev" align="right"><a href="javascript:void(0);" onclick="loadBlogCalendar(&#39;2011/09/01&#39;);return false;">&gt;</a></td></tr>
+	</tbody></table></td></tr><tr><th class="CalDayHeader" align="center" abbr="日" scope="col">日</th><th class="CalDayHeader" align="center" abbr="一" scope="col">一</th><th class="CalDayHeader" align="center" abbr="二" scope="col">二</th><th class="CalDayHeader" align="center" abbr="三" scope="col">三</th><th class="CalDayHeader" align="center" abbr="四" scope="col">四</th><th class="CalDayHeader" align="center" abbr="五" scope="col">五</th><th class="CalDayHeader" align="center" abbr="六" scope="col">六</th></tr><tr><td class="CalOtherMonthDay" align="center">31</td><td align="center">1</td><td align="center">2</td><td align="center">3</td><td align="center">4</td><td align="center">5</td><td class="CalWeekendDay" align="center">6</td></tr><tr><td class="CalWeekendDay" align="center">7</td><td align="center">8</td><td align="center">9</td><td align="center">10</td><td align="center">11</td><td align="center">12</td><td class="CalWeekendDay" align="center">13</td></tr><tr><td class="CalWeekendDay" align="center">14</td><td align="center">15</td><td align="center">16</td><td align="center">17</td><td align="center">18</td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/19.html"><u>19</u></a></td><td class="CalWeekendDay" align="center">20</td></tr><tr><td class="CalWeekendDay" align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/21.html"><u>21</u></a></td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/22.html"><u>22</u></a></td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23.html"><u>23</u></a></td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/24.html"><u>24</u></a></td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/25.html"><u>25</u></a></td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/26.html"><u>26</u></a></td><td class="CalWeekendDay" align="center">27</td></tr><tr><td class="CalWeekendDay" align="center">28</td><td align="center">29</td><td align="center"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/30.html"><u>30</u></a></td><td align="center">31</td><td class="CalOtherMonthDay" align="center">1</td><td class="CalOtherMonthDay" align="center">2</td><td class="CalOtherMonthDay" align="center">3</td></tr><tr><td class="CalOtherMonthDay" align="center">4</td><td class="CalOtherMonthDay" align="center">5</td><td class="CalOtherMonthDay" align="center">6</td><td class="CalOtherMonthDay" align="center">7</td><td class="CalOtherMonthDay" align="center">8</td><td class="CalOtherMonthDay" align="center">9</td><td class="CalOtherMonthDay" align="center">10</td></tr>
+</tbody></table></div><script type="text/javascript">loadBlogDefaultCalendar();</script></div>
+			
+			<div id="leftcontentcontainer">
+				<div id="blog-sidecolumn">
+
+<div class="mySearch">
+<h3 class="catListTitle">搜索</h3>
+<div id="widget_my_zzk" class="div_my_zzk"><input type="text" id="q" onkeydown="return zzk_go_enter(event);" class="input_my_zzk">&nbsp;<input onclick="zzk_go()" type="button" value="找找看" id="btnZzk" class="btn_my_zzk"></div>
+<div id="widget_my_google" class="div_my_zzk"><input type="text" name="google_q" id="google_q" onkeydown="return google_go_enter(event)" class="input_my_zzk">&nbsp;<input onclick="google_go()" type="button" value="谷歌搜索" class="btn_my_zzk"></div>
+</div>
+
+
+<div class="catListLink">
+<h3 class="catListTitle">常用链接</h3>
+<ul>
+
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_0" href="http://www.cnblogs.com/wisekingokok/p/">我的随笔</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_1" href="http://www.cnblogs.com/wisekingokok/MyComments.html">我的评论</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_2" title="我发表过评论的随笔" href="http://www.cnblogs.com/wisekingokok/OtherPosts.html">我的参与</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_3" href="http://www.cnblogs.com/wisekingokok/RecentComments.html">最新评论</a></li>
+	
+		<li><a id="ctl01_rptMainLinks_lnkLinkItem_4" href="http://www.cnblogs.com/wisekingokok/tag/">我的标签</a></li>
+	
+<li><a id="itemListLink" onclick="this.blur();WarpClass(&#39;itemListLink&#39;, &#39;itemListLin_con&#39;);return false;" href="http://www.cnblogs.com/wisekingokok/archive/2011/08/23/2150452.html#">更多链接</a></li>
+</ul>
+<div id="itemListLin_con" style="display:none;">
+<ul>
+
+</ul>
+</div>
+</div>
+<div class="catListTag">
+<h3 class="catListTitle">我的标签</h3>
+<ul>
+<li><a href="http://www.cnblogs.com/wisekingokok/tag/android/">android</a>(24)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/SQLite/">SQLite</a>(5)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/Content%20Provider/">Content Provider</a>(4)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/SharedPreferences/">SharedPreferences</a>(4)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/Activity/">Activity</a>(2)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/google/">google</a>(2)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/Intent/">Intent</a>(2)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/ContentProvider/">ContentProvider</a>(2)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/editText/">editText</a>(2)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/%E5%B8%83%E5%B1%80/">布局</a>(2)</li><li><a href="http://www.cnblogs.com/wisekingokok/tag/">更多</a></li>
+</ul>
+</div>
+<div class="catListPostCategory">
+<h3 class="catListTitle">随笔分类</h3>
+
+<ul>
+
+<li><a id="ctl03_CatList_LinkList_0_Link_0" href="http://www.cnblogs.com/wisekingokok/category/318009.html">Android技术(45)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_0_Link_1" href="http://www.cnblogs.com/wisekingokok/category/318011.html">Android应用(1)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_0_Link_2" href="http://www.cnblogs.com/wisekingokok/category/318010.html">Android资讯(9)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_0_Link_3" href="http://www.cnblogs.com/wisekingokok/category/349467.html">个人随记(2)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_0_Link_4" href="http://www.cnblogs.com/wisekingokok/category/323665.html">其他技术(2)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_0_Link_5" href="http://www.cnblogs.com/wisekingokok/category/318411.html">其他资讯(6)</a> </li>
+
+</ul>
+
+</div>
+
+<div class="catListPostArchive">
+<h3 class="catListTitle">随笔档案</h3>
+
+<ul>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_0" href="http://www.cnblogs.com/wisekingokok/archive/2013/08.html">2013年8月 (1)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_1" href="http://www.cnblogs.com/wisekingokok/archive/2012/02.html">2012年2月 (4)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_2" href="http://www.cnblogs.com/wisekingokok/archive/2012/01.html">2012年1月 (5)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_3" href="http://www.cnblogs.com/wisekingokok/archive/2011/12.html">2011年12月 (1)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_4" href="http://www.cnblogs.com/wisekingokok/archive/2011/11.html">2011年11月 (5)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_5" href="http://www.cnblogs.com/wisekingokok/archive/2011/10.html">2011年10月 (11)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_6" href="http://www.cnblogs.com/wisekingokok/archive/2011/09.html">2011年9月 (22)</a> </li>
+
+<li><a id="ctl03_CatList_LinkList_1_Link_7" href="http://www.cnblogs.com/wisekingokok/archive/2011/08.html">2011年8月 (13)</a> </li>
+
+</ul>
+
+</div>
+
+<div class="catList">
+<h3 class="catListTitle">友情链接</h3>
+
+<ul>
+
+<li><a id="ctl03_CatList_LinkList_2_Link_0" rel="nofollow" href="http://www.cnblogs.com/shlcn/" target="_blank">伤寒泪的博客</a> </li>
+
+</ul>
+
+</div>
+
+
+<div class="catListBlogRank">
+<h3 class="catListTitle">积分与排名</h3>
+<ul>
+	<li class="liScore">
+		积分 -	78605
+	</li><li class="liRank">
+		排名 -	1663
+	</li>
+</ul>
+</div>
+
+
+
+<div class="catListComment">
+<h3 class="catListTitle">最新评论<a id="_10df7a0_RSSHyperlink1" title="RSS订阅最最新评论" href="http://www.cnblogs.com/wisekingokok/CommentsRSS.aspx"><img title="RSS订阅最最新评论" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/xml.gif" alt=""></a></h3>
+
+	<div id="RecentCommentsBlock"><ul>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/10/06/2199948.html#2831829">1. Re:Android学习笔记——关于onConfigurationChanged</a></li>
+    <li class="recent_comment_body">为什么版本号是15的就没效果呢</li>
+    <li class="recent_comment_author">--塞上风</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/26/2154140.html#2823718">2. Re:利用Android 2.2新特性完成缩略图</a></li>
+    <li class="recent_comment_body">学习一下，如果是要弄视频的缩略图呢？怎么读取从资源文件读取视频呢？？？？？？？还是用extractThumbnail吗？或者要用Bitmap createVideoThumbnail(String filePath, int kind)，那么第一个参数是String类型的，filePath怎么从assets下面转换过来。。。求帮助！！！！！</li>
+    <li class="recent_comment_author">--yong7356</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/16/2177833.html#2810996">3. Re:Android数据的四种存储方式SharedPreferences、SQLite、Content Provider和File （三） —— SharePreferences</a></li>
+    <li class="recent_comment_body">你好 我在不同的类中再次 editor.putString  ，其中key是相同的，那么可以把之前的值覆盖掉吗？</li>
+    <li class="recent_comment_author">--hhb19900618</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/14/2174844.html#2804111">4. Re:Android数据的四种存储方式SharedPreferences、SQLite、Content Provider和File （二） —— SQLite</a></li>
+    <li class="recent_comment_body">如果db文件已经存在，那要把这个文件放到哪里？</li>
+    <li class="recent_comment_author">--CoderDream</li>
+    <li class="recent_comment_title"><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/16/2177833.html#2803949">5. Re:Android数据的四种存储方式SharedPreferences、SQLite、Content Provider和File （三） —— SharePreferences</a></li>
+    <li class="recent_comment_body">@毛丫汗丫毛这个多简单啊。你都知道他的名字了。SharedPreferences sp = ctx.getSharedPreferences("SP", MODE_PRIVATE);不就get到了么。</li>
+    <li class="recent_comment_author">--fategaga</li>
+</ul>
+</div>
+</div>
+
+<div class="catListView">
+<h3 class="catListTitle">阅读排行榜</h3>
+	<div id="TopViewPostsBlock"><ul><li><a href="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园.htm">1. 浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout(90839)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/16/2177833.html">2. Android数据的四种存储方式SharedPreferences、SQLite、Content Provider和File （三） —— SharePreferences(47086)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/24/2152004.html">3. 浅谈Android五大布局（二）——RelativeLayout和TableLayout(29545)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/05/2167755.html">4. Android定位功能（一）(21222)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/10/06/2199948.html">5. Android学习笔记——关于onConfigurationChanged(13387)</a></li></ul></div>
+</div>
+
+<div class="catListFeedback">
+<h3 class="catListTitle">评论排行榜</h3>
+	<div id="TopFeedbackPostsBlock"><ul><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/10/14/2211247.html">1. 恼人的设计模式(28)</a></li><li><a href="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园.htm">2. 浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout(15)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/06/2168479.html">3. Android定位功能（二）(14)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/26/2154140.html">4. 利用Android 2.2新特性完成缩略图(12)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/05/2167755.html">5. Android定位功能（一）(9)</a></li></ul></div>
+</div>
+
+<div class="catListView">
+<h3 class="catListTitle">推荐排行榜</h3>
+<div id="TopDiggPostsBlock"><ul><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/24/2152004.html">1. 浅谈Android五大布局（二）——RelativeLayout和TableLayout(31)</a></li><li><a href="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园.htm">2. 浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout(30)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/10/14/2211247.html">3. 恼人的设计模式(26)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/09/16/2177833.html">4. Android数据的四种存储方式SharedPreferences、SQLite、Content Provider和File （三） —— SharePreferences(23)</a></li><li><a href="http://www.cnblogs.com/wisekingokok/archive/2011/08/26/2154140.html">5. 利用Android 2.2新特性完成缩略图(15)</a></li></ul></div>
+</div></div><script type="text/javascript">loadBlogSideColumn();</script>
+			</div>
+			
+		</div><!--end: sideBarMain -->
+	</div><!--end: sideBar 侧边栏容器 -->
+	<div class="clear"></div>
+	</div><!--end: main -->
+	<div class="clear"></div>
+	<div id="footer">
+		
+<!--done-->
+Copyright ©2013 熊猫82
+	</div><!--end: footer -->
+</div><!--end: home 自定义的最大容器 -->
+<!--PageEndHtml Block Begin-->
+<script type="text/javascript" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/tongji.js"></script><noscript>&lt;a href="http://www.linezing.com"&gt;&lt;img src="http://img.tongji.linezing.com/2582060/tongji.gif"/&gt;&lt;/a&gt;</noscript>
+<!--PageEndHtml Block End-->
+<script type="text/javascript" src="./浅谈Android五大布局（一）——LinearLayout、FrameLayout和AbsoulteLayout - 熊猫82 - 博客园_files/google-analytics.js"></script>
+
+
+<div id="chrome_websiteIP" class="chrome_websiteIP_right">10.14.36.100</div></body></html>

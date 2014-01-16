@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ScrollView是一种特殊的FrameLayout，
+    使用ScrollView可以使用户能够滚动一个包含views的列表，
+    这样做的话，就可以利用比物理显示区域更大的空间。有一点需要注意一下，
+    那就是ScrollView只能包含一个子视图view或ViewGroup
+    （这个ViewGroup通常是LinearLayout）。
+    
+    @See http://blog.csdn.net/manoel/article/details/7579124 
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".MainActivity">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        
+        android:focusable="true"  
+        android:focusableInTouchMode="true" 
+        >
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <!-- 
+                   因为EditText自动获得了焦点，它充满了整个activity（因为它的高度被设置成了600dp）。
+                   如果想阻止这个EditText获得焦点，那么只需在<LinearLayout>元素中添加以下两个属性：
+             android:focusable="true"  
+             android:focusableInTouchMode="true"  
+         -->
+        <EditText  
+            android:id="@+id/txt"  
+            android:layout_width="fill_parent"  
+            android:layout_height="600dp" />  
+            
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>        
+
+         <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>        
+
+         <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/> 
+  
+         <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>        
+
+         <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>        
+
+         <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>
+        
+        <Button 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Button"/>        
+    </LinearLayout>
+   
+
+</ScrollView>

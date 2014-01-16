@@ -1,0 +1,84 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML>
+	<HEAD>
+		<title>温馨提示</title>
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="C#" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<meta http-equiv="pragma" content="no-cache">
+		<LINK media="screen" href="http://10.14.36.83:8080/Css/maintemp.css" type="text/css" rel="stylesheet">
+		<LINK media="screen" href="http://10.14.36.83:8080/Css/localtemp.css" type="text/css" rel="stylesheet">
+	    </HEAD>
+	<body MS_POSITIONING="GridLayout">
+		<form name="Form1" method="post" action="TempVisit.aspx?__tencentip=10.28.92.97&amp;__tencentid=1&amp;__tencentrawurl=http%3a%2f%2fa.pongo.cn%2fJob%2fGetAdForCallBack%3fid%3d7&amp;UrlAdParam=http%253A%252F%252Fblog.csdn.net%252Fmanoel%252Farticle%252Fdetails%252F7579085&amp;CallBack=showad7" id="Form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTE0NTU1NjE2MA8WBB4GcmF3dXJsBZcBaHR0cDovL2EucG9uZ28uY24vSm9iL0dldEFkRm9yQ2FsbEJhY2s/aWQ9NyZVcmxBZFBhcmFtPWh0dHAlMjUzQSUyNTJGJTI1MkZibG9nLmNzZG4ubmV0JTI1MkZtYW5vZWwlMjUyRmFydGljbGUlMjUyRmRldGFpbHMlMjUyRjc1NzkwODUmQ2FsbEJhY2s9c2hvd2FkNx4KU2hvd0RvbWFpbgURaHR0cDovL2EucG9uZ28uY25kZD2KycdDj63BmqlCqjjzfXwwhZWW" />
+</div>
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWAgK35/7TDgKpzZ/2BtdmFKa+Eg1hAuE92cmCq8Hd1imq" />
+</div>
+			<div class="header">
+				<div class="real-wrap">
+					<div class="site-logo"><img src="http://10.14.36.83:8080/img/5.jpg"></div>
+				</div>
+			</div>
+			<div class="maincontent" >
+				<div class="real-wrap" style="width:800px;">
+					<div class="loginpanel" >
+						<h6 style="margin-left:8px">当前网址：&nbsp;&nbsp;<font class="highLineFont" style="font-size:18px;font-family:tahoma;">http://a.pongo.cn/Job/GetAdForCallBack?id=7&UrlAdParam=http%253A%252F%252Fblog.csdn.net%252Fmanoel%252Farticle%252Fdetails%252F7579085&CallBack=showad7</font></h6>
+						<ul class="qll">
+							<li>
+								<div style="font-size:12px;">
+                                    <br />
+									<p>IT服务提醒您：该站点安全性未知，需点击“临时访问”才可以继续浏览</p>
+                                    <p>如果不是主动发起的访问，不知道为何PC会发出这样的访问（可能是PC中了木马或病毒，需要过滤和安全帮助），请点击“<font color="red">报警</font>”</p>
+								</div>
+                                <br />
+								<div class="ShowMesssageDiv" style="DISPLAY:none" id="messsageDiv">
+									<IMG src="http://10.14.36.83:8080/Images/spinner.gif" border="0">&nbsp;<label id="lbMsg" class="ShowMesssageLabel">申请成功，当天访问无需再次申请。&nbsp;</label>
+								</div>
+								<div class="buttonDiv">
+								<div style="display:none">
+								<input type="submit" name="btnTempVisit" value="" id="btnTempVisit" style="font-size:XX-Large; 
+                                    background-image: url(http://10.14.36.83:8080/img/3.jpg);" />
+                                    </div>
+                                    <a onclick="f_TempVisitSubmit();"><img src="http://10.14.36.83:8080/img/7.bmp"></a>
+									<div style="margin-top:23px">
+										<a href="http://trans.oa.com/office/flowform/case.aspx?AppCode=367" 
+										target="_blank" title="申请长期访问该域名">想要申请长期访问该域名 ></a>
+									<div/>
+								</div>
+								<h3></h3>
+									<div style="text-align:left">
+										更多安全问题可以反馈&咨询：&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://10.14.36.83:8080/img/1.jpg">CE反馈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://10.14.36.83:8080/img/2.jpg">IT安全门户
+									</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="real-wrap">
+					<p>Copyright &#169; 1998 - 2013 TENCENT. All Rights Reserved.</p>
+				</div>
+			</div>
+		</form>
+		<script language="javascript">
+        function f_TempVisitSubmit() {
+		        document.getElementById("btnTempVisit").click();
+		    }
+		<!--
+		    function f_TempVisitSubmit() {
+		        document.getElementById("messsageDiv").style.display = "block";
+		        var tmp = "申请成功，本次申请的网站今天内无需再次申请。";
+		        document.getElementById("lbMsg").innerText = tmp;
+		        setTimeout('document.getElementById("btnTempVisit").click()', 1000);
+		    }
+			//-->
+		</script>
+	</body>
+</HTML>

@@ -1,0 +1,14 @@
+package com.irelandken.chat.activity;
+
+/**
+ * 全局的Application Context
+ * @author kenzfliang
+ *
+ */
+public class ApplicationContext {
+	
+	public static LoginActivity LOGIN_ACTIVITY;
+	
+	public static MainActivity MAIN_ACTIVITY;
+
+}

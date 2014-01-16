@@ -1,0 +1,83 @@
+package com.irelandken.chat.activity;
+
+
+import com.irelandken.chat.ApplicationContext;
+import com.irelandken.chat.R;
+import com.irelandken.chat.message.Message;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.app.Activity;
+
+/**
+ * @See http://blog.csdn.net/manoel/article/details/7582454
+ * @author kenzfliang
+ */
+public class LoginActivity extends Activity {
+
+	public static final int LOGIN_RESULT = 1;
+	
+	private Handler messageHandler;
+
+	/**
+	 * @return 当前Activity关于main thread的Handler
+	 */
+	public Handler getMessageHandler() {
+		return messageHandler;
+	}
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//Window.FEATURE_NO_TITLE : 隐藏Title
+		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		super.setContentView(R.layout.activity_login);
+		
+		ApplicationContext.LOGIN_ACTIVITY = this;
+		
+		//登录
+		Button loginBtn = (Button) super.findViewById(R.id.loginBtn);
+		loginBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ApplicationContext.webSocketConnect();
+				
+				Message message = new Message();
+				message.setType(Message.TYPE_LOGIN);
+				//用户名
+				message.setContent("KEN");
+					
+				ApplicationContext.sendMessage(message);
+			}
+		});
+		
+		//主线程的Looper: 消息循环
+		Looper uiLooper = Looper.myLooper();
+		
+		/**
+		 * 从Looper的MessageQueue取出信息，然后显示信息的Handler
+		 */
+		messageHandler = new Handler(uiLooper, new Handler.Callback() {
+			
+			@Override
+			public boolean handleMessage(android.os.Message msg) {
+				System.out.println("[LOGIN RESULT]:" + msg.obj);
+
+				Message message = (Message) msg.obj;
+				
+				if(message.getContent().equals("200")) {
+					//登录成功
+				}
+				
+				
+				return true;
+			}
+		});
+
+		
+	}
+}

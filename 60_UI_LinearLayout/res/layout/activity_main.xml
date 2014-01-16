@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="8dp" 
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    tools:context=".MainActivity">
+    
+    
+	 <!--@See http://blog.csdn.net/manoel/article/details/7579032 -->
+
+     <!-- paddingLeft, paddingRight, paddingTop, paddingBottom 和CSS的padding差不多 -->
+    
+     <!-- android:orientation="vertical" : 线性布局的方向 vertical / horizontal -->
+    
+     <!-- fill_parent : 填充了整个它所在布局的宽度  -->
+     <!-- wrap_content: 数值由其中的内容的宽度/高度 决定  -->
+      
+     <TextView  
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:text="Jack\n  -- 358808414" />  
+        
+     <TextView  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="Mary\n  -- 735704239" />
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="发送" />
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+package com.irelandken.chat.websocket;
+
+import java.net.URI;
+import java.nio.ByteBuffer;
+
+import org.java_websocket.client.WebSocketClient;
+import org.java_websocket.drafts.Draft;
+import org.java_websocket.handshake.ServerHandshake;
+
+import com.irelandken.chat.message.Message;
+import com.irelandken.chat.message.MessageProtoConverter;
+
+import android.os.Handler;
+
+/**
+ * @see http://java-websocket.org/ 
+ * @author kenzfliang
+ */
+
+public class SimpleWebSocketClient extends WebSocketClient {
+
+	private static final int MESSAGE_RECEIVED = 1;
+	
+	private Handler mainThreadMessageReceiveHandler;
+	
+	public SimpleWebSocketClient( URI serverUri , Draft draft , Handler mainThreadMessageReceiveHandler) {
+		super( serverUri, draft );
+		
+		this.mainThreadMessageReceiveHandler = mainThreadMessageReceiveHandler;
+	}
+
+	@Override
+	public void onOpen( ServerHandshake handshakedata ) {
+		System.out.println( "opened connection" );
+		// if you pan to refuse connection based on ip or httpfields overload: onWebsocketHandshakeReceivedAsClient
+	}
+
+	@Override
+	public void onMessage( String content ) {
+		System.out.println( "received : " + content );
+		
+		android.os.Message msg = android.os.Message.obtain(mainThreadMessageReceiveHandler, MESSAGE_RECEIVED, 0, 0, content);
+		
+		//给主线程的Looper插入一条消息
+		mainThreadMessageReceiveHandler.sendMessage(msg);
+	}
+	
+	@Override
+	public void onMessage( ByteBuffer buffer ) {
+		System.out.println( "ByteBuffer received : " + buffer );
+		
+		byte[] data = null;
+		
+		if(buffer.hasArray()) {
+			data = buffer.array();
+		} else {
+			data = toArray(buffer);
+		}
+		
+		//解释ProtoBuf
+		Message message = MessageProtoConverter.parseFrom(data);
+		
+		android.os.Message msg = android.os.Message.obtain(mainThreadMessageReceiveHandler, MESSAGE_RECEIVED, 0, 0, message.getContent());
+		
+		//给主线程的Looper插入一条消息
+		mainThreadMessageReceiveHandler.sendMessage(msg);
+	};
+
+	@Override
+	public void onClose( int code, String reason, boolean remote ) {
+		// The codecodes are documented in class org.java_websocket.framing.CloseFrame
+		System.out.println( "Connection closed by " + ( remote ? "remote peer" : "us" ) );
+	}
+
+	@Override
+	public void onError( Exception ex ) {
+		ex.printStackTrace();
+		// if the error is fatal then onClose will be called additionally
+	}
+	
+	/**
+	 * Util Method, Convert ByteBuffer to byte[]
+	 * @param buffer
+	 * @return
+	 */
+	private static byte[] toArray(ByteBuffer buffer) {
+		
+		byte[] data = new byte[buffer.capacity()];
+		
+		int i = 0;
+		while(buffer.hasRemaining()) {
+			data[i++] = buffer.get();
+		}
+		return data;
+	}
+}

@@ -1,0 +1,61 @@
+package com.irelandken.chat.activity;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.java_websocket.drafts.Draft_17;
+
+import com.irelandken.chat.R;
+import com.irelandken.chat.message.Message;
+import com.irelandken.chat.message.MessageProtoConverter;
+import com.irelandken.chat.ui.ChatMessageListAdapter;
+import com.irelandken.chat.websocket.SimpleWebSocketClient;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.app.Activity;
+
+/**
+ * @See http://blog.csdn.net/manoel/article/details/7582454
+ * @author kenzfliang
+ */
+public class LoginActivity extends Activity {
+
+	private SimpleWebSocketClient ws;
+
+	private Handler mainThreadMessageReceiveHandler;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//Window.FEATURE_NO_TITLE : 隐藏Title
+		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		super.setContentView(R.layout.activity_login);
+		
+		//登录
+		Button loginBtn = (Button) super.findViewById(R.id.loginBtn);
+		loginBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				try {
+					LoginActivity.this.ws = new SimpleWebSocketClient( new URI( "ws://10.66.117.59/" ), new Draft_17(), 
+							                                              LoginActivity.this.mainThreadMessageReceiveHandler);
+				} catch (URISyntaxException e) {
+					e.printStackTrace();
+				} 
+				LoginActivity.this.ws.connect();
+			}
+		});
+		
+	}
+}

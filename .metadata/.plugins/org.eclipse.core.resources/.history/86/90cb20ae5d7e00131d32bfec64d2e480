@@ -1,0 +1,197 @@
+package com.irelandken.chat;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.java_websocket.client.WebSocketClient;
+import org.java_websocket.drafts.Draft;
+import org.java_websocket.drafts.Draft_17;
+import org.java_websocket.handshake.ServerHandshake;
+
+import com.irelandken.chat.R;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+import android.app.Activity;
+
+/**
+ * @See http://blog.csdn.net/manoel/article/details/7582454
+ * @author kenzfliang
+ */
+
+class SimpleWebSocketClient extends WebSocketClient {
+
+	private static final int MESSAGE_RECEIVED = 1;
+	
+	private Handler mainThreadMessageReceiveHandler;
+	
+	public SimpleWebSocketClient( URI serverUri , Draft draft , Handler mainThreadMessageReceiveHandler) {
+		super( serverUri, draft );
+		
+		this.mainThreadMessageReceiveHandler = mainThreadMessageReceiveHandler;
+	}
+
+	@Override
+	public void onOpen( ServerHandshake handshakedata ) {
+		System.out.println( "opened connection" );
+		// if you pan to refuse connection based on ip or httpfields overload: onWebsocketHandshakeReceivedAsClient
+	}
+
+	@Override
+	public void onMessage( String message ) {
+		System.out.println( "received : " + message );
+		
+		Message msg = Message.obtain(mainThreadMessageReceiveHandler, MESSAGE_RECEIVED, 0, 0, message);
+		
+		//给主线程的Looper插入一条消息
+		mainThreadMessageReceiveHandler.sendMessage(msg);
+	}
+
+	@Override
+	public void onClose( int code, String reason, boolean remote ) {
+		// The codecodes are documented in class org.java_websocket.framing.CloseFrame
+		System.out.println( "Connection closed by " + ( remote ? "remote peer" : "us" ) );
+	}
+
+	@Override
+	public void onError( Exception ex ) {
+		ex.printStackTrace();
+		// if the error is fatal then onClose will be called additionally
+	}
+}
+
+public class MainActivity extends Activity {
+
+	private List<Map<String, Object>> data;
+	
+	private ListView datalist; //定义ListView组件
+	
+	private ChatAdapter chatAdapter;
+	
+	private SimpleWebSocketClient ws;
+
+	private Handler mainThreadMessageReceiveHandler;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//Window.FEATURE_NO_TITLE : 隐藏Title
+		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		super.setContentView(R.layout.activity_main);
+		
+		
+		
+		//主线程的Looper: 消息循环
+		Looper uiLooper = Looper.myLooper();
+		
+		/**
+		 * 从Looper的MessageQueue取出信息，然后显示信息的Handler
+		 */
+		mainThreadMessageReceiveHandler = new Handler(uiLooper, new Handler.Callback() {
+			
+			@Override
+			public boolean handleMessage(Message msg) {
+				System.out.println("[Showing Msg]:" + msg.obj);
+				
+				Map<String,Object> map = new HashMap<String,Object>(2);
+				map.put("msg", msg.obj);
+				map.put("type", ChatAdapter.TYPE_LEFT_TEXT);
+				
+				MainActivity.this.data.add(map);
+				
+				//通知ListView, Data已改变, 刷新ListView
+				MainActivity.this.chatAdapter.notifyDataSetChanged();
+				
+				return true;
+			}
+		});
+		
+		//配置ListView
+		datalist = (ListView) super.findViewById(R.id.datalist);
+		
+		data = new ArrayList<Map<String,Object>>();
+		
+/*		Map<String,Object> map = new HashMap<String,Object>();
+		map.put("msg", "今天天气很好!");
+		map.put("type", ChatAdapter.TYPE_LEFT_TEXT);
+		
+		Map<String,Object> map2 = new HashMap<String,Object>();
+		map2.put("msg", "今天天气很好!");
+		map2.put("type", ChatAdapter.TYPE_RIGHT_TEXT);
+		
+		data.add(map);
+		data.add(map2);
+		data.add(map);
+		data.add(map2);
+		data.add(map);
+		data.add(map);
+		data.add(map2);
+		data.add(map);
+		data.add(map2);
+		data.add(map);
+		data.add(map2);
+		data.add(map2);
+		data.add(map);*/
+		
+		chatAdapter = new ChatAdapter(this, data);
+		datalist.setAdapter(chatAdapter);
+		
+		Button sendBtn = (Button) super.findViewById(R.id.sendBtn);
+		sendBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				
+				EditText msgEdit = (EditText) MainActivity.this.findViewById(R.id.msgEdit);
+				
+				String msg = msgEdit.getText().toString();
+				
+				if(msg.length() == 0) {
+					return;
+				}
+				
+				if(ws != null) {
+					ws.send(msg);
+					
+					Map<String,Object> map = new HashMap<String,Object>(2);
+					map.put("msg", msg);
+					map.put("type", ChatAdapter.TYPE_RIGHT_TEXT);
+					
+					data.add(map);
+					
+					//通知ListView, Data已改变, 刷新ListView
+					chatAdapter.notifyDataSetChanged();
+					
+					//清空输入框
+					msgEdit.setText("");
+				}
+			}
+		});
+		
+		Button personInfoBtn = (Button) super.findViewById(R.id.personInfoBtn);
+		personInfoBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				try {
+					MainActivity.this.ws = new SimpleWebSocketClient( new URI( "ws://10.66.117.59/" ), new Draft_17(), 
+							                                              MainActivity.this.mainThreadMessageReceiveHandler);
+				} catch (URISyntaxException e) {
+					e.printStackTrace();
+				} 
+				MainActivity.this.ws.connect();
+			}
+		});
+		
+	}
+}

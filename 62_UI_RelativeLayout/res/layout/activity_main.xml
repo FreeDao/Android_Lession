@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- @See http://blog.csdn.net/manoel/article/details/7579094 -->
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp" 
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    tools:context=".MainActivity">
+    
+    <!-- 使用RelativeLayout，可以通过设置“相对位置”（每个View相对于另一个view的位置），
+                  来指定它所包含的子view的位置。 -->
+                  
+    <TextView
+        android:id="@+id/lblComments"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentLeft="true" 
+        android:layout_alignParentTop="true"
+        android:text="Comments" 
+    />
+    <!-- 
+    	layout_alignParentLeft, layout_alignParentTop
+    	这个TextView 与其对齐对父亲的左上角
+    -->
+    
+    
+    <EditText
+        android:id="@+id/txtComments"  
+        android:layout_width="fill_parent" 
+        android:layout_height="170dp"
+        
+        android:layout_alignLeft="@+id/lblComments"
+        android:layout_below="@+id/lblComments"
+        android:layout_centerHorizontal="true"
+        
+        android:textSize="18sp"
+    />
+    <!--
+    layout_alignLeft="@+id/lblComments"
+         与 lblComments 的左边对齐
+    layout_below="@+id/lblComments"
+         在 lblComments 的下方
+    layout_centerHorizontal
+         水平居中
+     -->
+     
+     <Button
+         android:layout_width="125dp"
+         android:layout_height="wrap_content"
+         
+         android:layout_alignRight="@+id/txtComments"
+         android:layout_below="@+id/txtComments"
+         
+         android:text="Save"
+      />
+     
+      <Button
+         android:layout_width="125dp"
+         android:layout_height="wrap_content"
+         
+         android:layout_alignLeft="@+id/txtComments"
+         android:layout_below="@+id/txtComments"
+         
+         android:text="Cancel"
+      />
+
+</RelativeLayout >

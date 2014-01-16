@@ -1,0 +1,10 @@
+package proto;
+
+option java_package = "com.irelandken.chat";
+option java_outer_classname = "MessageProtos";
+
+message Message {
+  required int32 type = 1;
+  optional string to = 2;
+  optional string content = 3;
+}

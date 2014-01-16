@@ -1,0 +1,1 @@
+ protoc.exe -I=R:\node_workspace\android\android_workspace\68.5_ProtoBuf\src\proto\ --java_out=R:\node_workspace\android\android_workspace\68.5_ProtoBuf\src\ R:\node_workspace\android\android_workspace\68.5_ProtoBuf\src\proto\Message.proto

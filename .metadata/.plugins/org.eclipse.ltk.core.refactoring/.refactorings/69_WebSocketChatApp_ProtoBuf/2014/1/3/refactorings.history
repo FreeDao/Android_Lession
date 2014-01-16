@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;69_WebSocketChatApp_ProtoBuf/src/com/irelandken/chat/MainActivity(KENZFLIANG-PC0的冲突版本).java&apos; to &apos;MainActivity.java&apos;" description="Rename resource &apos;MainActivity(KENZFLIANG-PC0的冲突版本).java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/irelandken/chat/MainActivity(KENZFLIANG-PC0的冲突版本).java" name="MainActivity.java" stamp="1389844536631" updateReferences="true"/>
+</session>

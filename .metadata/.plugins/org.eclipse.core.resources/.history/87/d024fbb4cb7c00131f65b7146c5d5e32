@@ -1,0 +1,18 @@
+package com.irelandken.chat.activity;
+
+import com.irelandken.chat.websocket.SimpleWebSocketClient;
+
+/**
+ * 全局的Application Context
+ * @author kenzfliang
+ *
+ */
+public class ApplicationContext {
+	
+	public static LoginActivity LOGIN_ACTIVITY;
+	
+	public static MainActivity MAIN_ACTIVITY;
+	
+	public static SimpleWebSocketClient WEB_SOCKET_CLIENT;
+
+}

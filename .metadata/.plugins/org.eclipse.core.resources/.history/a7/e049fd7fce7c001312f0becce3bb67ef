@@ -1,0 +1,55 @@
+package com.irelandken.chat;
+
+import java.net.URI;
+import java.net.URISyntaxException;
+
+import org.java_websocket.drafts.Draft_17;
+
+import com.irelandken.chat.activity.LoginActivity;
+import com.irelandken.chat.activity.MainActivity;
+
+import com.irelandken.chat.message.Message;
+import com.irelandken.chat.websocket.SimpleWebSocketClient;
+
+/**
+ * 全局的Application Context
+ * @author kenzfliang
+ *
+ */
+public class ApplicationContext {
+	
+	public static LoginActivity LOGIN_ACTIVITY;
+	
+	public static MainActivity MAIN_ACTIVITY;
+	
+	
+	public static SimpleWebSocketClient WEB_SOCKET_CLIENT;
+	
+	/**
+	 * init, connect/reconnect WebSocket
+	 * @return
+	 */
+	public static boolean webSocketConnect() {
+		
+		if(WEB_SOCKET_CLIENT == null) {
+			try {
+				WEB_SOCKET_CLIENT = new SimpleWebSocketClient( new URI( "ws://10.66.117.59/" ), new Draft_17());
+			} catch (URISyntaxException e) {
+				e.printStackTrace();
+				return false;
+			}
+		}
+		
+		WEB_SOCKET_CLIENT.connect();
+		
+		return true;
+	}
+
+	/**
+	 * 消息分发
+	 * @param message
+	 */
+	public static void dispatchMessage(Message message) {
+		
+	}
+}

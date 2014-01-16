@@ -1,0 +1,16 @@
+1389597968477	Move compilation unit
+1389601729671	Delete element
+1389603450408	Encapsulate field 'from'
+1389665189653	Rename compilation unit 'MainActivity2.java'
+1389665223768	Rename resource 'MainActivity(KENZFLIANG-PC0的冲突版本(2) ).java'
+1389665226963	Delete element
+1389666553030	Copy file
+1389667380917	Copy compilation unit
+1389667556252	Rename local variable 'personInfoBtn'
+1389670099524	Encapsulate field 'mainThreadMessageReceiveHandler'
+1389670595880	Rename field 'mainThreadMessageReceiveHandler'
+1389670610865	Rename method 'getMainThreadMessageReceiveHandler'
+1389670625656	Rename field 'mainThreadMessageReceiveHandler'
+1389670767169	Rename field 'messageReceiveHandler'
+1389670773259	Rename method 'getMessageReceiveHandler'
+1389856527504	Rename local variable 'msgEdit'

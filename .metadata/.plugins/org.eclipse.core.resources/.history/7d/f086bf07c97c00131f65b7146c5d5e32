@@ -1,0 +1,8 @@
+package com.irelandken.chat.activity;
+
+public class ApplicationContext {
+	
+	public static LoginActivity LOGIN_ACTIVITY;
+	
+
+}

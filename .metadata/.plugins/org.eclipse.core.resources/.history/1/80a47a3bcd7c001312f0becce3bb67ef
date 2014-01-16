@@ -1,0 +1,43 @@
+package com.irelandken.chat.activity;
+
+
+
+import com.irelandken.chat.ApplicationContext;
+import com.irelandken.chat.R;
+
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.app.Activity;
+
+/**
+ * @See http://blog.csdn.net/manoel/article/details/7582454
+ * @author kenzfliang
+ */
+public class LoginActivity extends Activity {
+
+	private Handler mainThreadMessageReceiveHandler;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		//Window.FEATURE_NO_TITLE : 隐藏Title
+		super.requestWindowFeature(Window.FEATURE_NO_TITLE);
+		super.setContentView(R.layout.activity_login);
+		
+		ApplicationContext.LOGIN_ACTIVITY = this;
+		
+		//登录
+		Button loginBtn = (Button) super.findViewById(R.id.loginBtn);
+		loginBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				ApplicationContext.webSocketConnect();
+			}
+		});
+		
+	}
+}

@@ -1,0 +1,93 @@
+package com.irelandken.message;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.os.Message;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ProgressBar;
+import android.app.Activity;
+
+/**
+ * 
+ * MessageQueue里的enqueueMessage()方法完成将msg根据执行时间添加到队列的一个位置后
+ * 有个关键的代码为nativeWake(mPtr);这一行, 这一行会唤醒MessageQueue所属的Looper的线程,
+ * 然后线程才得知MessageQueue有新的msg
+ * 
+ * @author kenzfliang
+ *
+ */
+
+public class MainActivity extends Activity {
+
+	private ProgressBar progressBar = null;
+	
+	private static final int PRO_UPDATE = 1;//操作的what状态
+	
+	private Thread updateThread = null;
+	
+	Handler proUpdateEventHandler = null;
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		super.setContentView(R.layout.activity_main);
+		
+		final Button startBtn = (Button) this.findViewById(R.id.startButton);
+
+		this.progressBar = (ProgressBar) this.findViewById(R.id.myProgressBar);
+		
+		//主线程的Looper: 消息循环
+		Looper uiLooper = Looper.myLooper();
+		
+		proUpdateEventHandler = new Handler(uiLooper, new Handler.Callback() {
+			
+			@Override
+			public boolean handleMessage(Message msg) {
+				
+				int diff = (Integer) msg.obj;
+				
+				progressBar.incrementProgressBy(diff);
+				
+				System.out.println("[Progress Update]:" + diff);
+				
+				return true;
+			}
+		});
+		
+		//更新进度的后台线程
+		updateThread = new Thread(new Runnable() {
+			@Override
+			public void run() {
+				
+				for (int i = 0; i < 1000; i++) {
+					
+					Message msg = Message.obtain(proUpdateEventHandler, PRO_UPDATE, 0, 0, 1);
+					
+					//给主线程的Looper插入一条消息
+					proUpdateEventHandler.sendMessage(msg);
+					
+					try {
+						Thread.sleep(50);
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+				
+			}
+		});
+		updateThread.setName("ProgressUpdateThread");
+		
+		
+		//Start 按钮点击后, 启动进度条线程
+		startBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				startBtn.setClickable(false);
+				
+				updateThread.start();
+			}
+		});
+	}
+}
