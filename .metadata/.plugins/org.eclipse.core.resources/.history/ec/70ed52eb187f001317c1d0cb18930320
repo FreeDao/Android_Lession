@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    tools:context=".MainActivity">
+    
+    <!-- Top Menu -->
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        android:background="@color/light_green"
+        >
+        
+        <Button
+	        android:id="@+id/backBtn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/g_title_bar_back_icon_selector"
+    	/>
+        
+        <TextView 
+            android:id="@+id/name"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dp"
+	        android:gravity="center|center_vertical"
+	        android:text="小鱼儿"
+	        android:textColor="@color/white"
+	        android:textSize="20sp"
+	    />
+            
+        <Button
+	        android:id="@+id/personInfoBtn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="right"
+	        android:background="@drawable/g_title_user_info_icon_selector"
+    	/>
+    </FrameLayout>
+    
+    
+    <!-- main content -->
+
+    <ListView
+        android:id="@+id/chatMessageList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/light"
+        android:divider="@null" />
+
+    <!-- Bottom Menu -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white2"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="4dp" >
+        
+        <Button
+	        android:id="@+id/recordBtn"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:background="@drawable/asr_start_btn_selector"
+    	/>
+        
+        <EditText
+            android:id="@+id/msgEdit"
+            android:background="@drawable/bg_message_text_edit"
+            android:background="@drawable/bg_message_text_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="62dp"
+            android:textSize="20sp" />
+            
+        <Button
+            android:id="@+id/sendBtn"
+            android:background="@drawable/g_send_btn_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            
+            android:layout_gravity="right"
+            
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="15sp" 
+       />
+
+    </FrameLayout>
+    
+
+
+</FrameLayout>

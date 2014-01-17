@@ -37,7 +37,7 @@ public class ApplicationContext {
 		
 		if(WEB_SOCKET_CLIENT == null) {
 			try {
-				WEB_SOCKET_CLIENT = new SimpleWebSocketClient( new URI( "ws://10.66.120.112/" ), new Draft_17());
+				WEB_SOCKET_CLIENT = new SimpleWebSocketClient( new URI( "ws://183.4.2.41/" ), new Draft_17());
 			} catch (URISyntaxException e) {
 				e.printStackTrace();
 				return false;
