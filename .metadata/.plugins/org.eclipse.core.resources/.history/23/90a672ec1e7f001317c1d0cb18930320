@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+   <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white2"
+        android:paddingBottom="4dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="4dp" >
+        
+        <EditText
+            android:id="@+id/msgEdit"
+            android:background="@drawable/bg_message_text_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginLeft="51dp"
+            android:layout_marginRight="62dp"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+    
+</FrameLayout>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="28" version="2.0">
+<workbench progressCount="37" version="2.0">
 <workbenchAdvisor/>
-<window height="788" maximized="true" width="1266" x="565" y="354">
+<window height="728" maximized="true" width="1266" x="113" y="0">
 <fastViewData fastViewLocation="1024">
-<orientation position="512" view="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <orientation position="512" view="com.android.ide.eclipse.hierarchyviewer.views.LayoutView"/>
+<orientation position="512" view="com.android.ide.eclipse.ddms.views.LogCatView"/>
 <orientation position="512" view="org.eclipse.ui.console.ConsoleView"/>
 </fastViewData>
 <perspectiveBar>
@@ -26,7 +26,7 @@
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -34,7 +34,7 @@
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -44,16 +44,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ApplicationContext.java" partName="ApplicationContext.java" path="R:/node_workspace/android/android_workspace/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ApplicationContext.java" title="ApplicationContext.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ApplicationContext.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ApplicationContext.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1101" selectionTopPixel="882"/>
-</editor>
 </editors>
 <views>
 <view id="org.eclipse.team.ui.GenericHistoryView" partName="History">
@@ -65,14 +59,14 @@
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices">
+<viewState/>
+</view>
 <view id="org.eclipse.search.ui.views.SearchView" partName="Search">
 <viewState isPinned="false">
 <view IMemento.internal.id="org.eclipse.jdt.ui.JavaSearchResultPage" org.eclipse.jdt.search.resultpage.grouping="3" org.eclipse.jdt.search.resultpage.limit="1000" org.eclipse.jdt.search.resultpage.limit_enabled="TRUE" org.eclipse.jdt.search.resultpage.sorting="1" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2"/>
 <view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
 </viewState>
-</view>
-<view id="com.android.ide.eclipse.ddms.views.DeviceView" partName="Devices">
-<viewState/>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
@@ -102,11 +96,11 @@
 <view id="com.android.ide.eclipse.ddms.views.FileExplorerView" partName="File Explorer">
 <viewState/>
 </view>
+<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (5 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="963"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -114,9 +108,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="com.android.ide.eclipse.ddms.views.NetworkStatsView" partName="Network Statistics">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -160,11 +151,11 @@
 <viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
-<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
 <view id="com.android.ide.eclipse.ddms.views.AllocTrackerView" partName="Allocation Tracker">
 <viewState/>
 </view>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
@@ -235,14 +226,14 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProgressView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29903537"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29903537"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.ProgressView" ratio="0.29903537"/>
+<view id="org.eclipse.ui.views.ProgressView" ratio="0.3"/>
 <view id="org.eclipse.search.ui.views.SearchView" ratio="0.3"/>
 <view id="org.eclipse.team.ui.GenericHistoryView" ratio="0.3"/>
 </fastViews>
@@ -275,8 +266,8 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.27936748" ratioLeft="371" ratioRight="957" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.63608086" ratioLeft="409" ratioRight="234" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<info folder="true" part="bottom" ratio="0.7431341" ratioLeft="460" ratioRight="159" relationship="4" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LabelNotFound"/>
@@ -392,7 +383,7 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.7253635" ratioLeft="449" ratioRight="170" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.67205167" ratioLeft="416" ratioRight="203" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -412,7 +403,7 @@
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@23d05b1a" ratio="0.29594097" ratioLeft="401" ratioRight="954" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@23d05b1a" ratio="0.26863468" ratioLeft="364" ratioRight="991" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">
 <folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
 <page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
@@ -422,7 +413,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25112107" ratioLeft="112" ratioRight="334" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.5617433" ratioLeft="232" ratioRight="181" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
 <info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7586716" ratioLeft="1028" ratioRight="327" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
@@ -496,30 +487,43 @@
 <view id="com.android.ide.eclipse.ddms.views.FileExplorerView"/>
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView"/>
 <view id="com.android.ide.eclipse.ddms.views.SysInfoView"/>
-<fastViews>&#x0A;<view id="com.android.ide.eclipse.hierarchyviewer.views.LayoutView" ratio="0.2996862"/>
+<fastViews>
+<view id="com.android.ide.eclipse.hierarchyviewer.views.LayoutView" ratio="0.2996862"/>
 </fastViews>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="devices">&#x0A;<folder activePageID="com.android.ide.eclipse.ddms.views.DeviceView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.DeviceView" label="Devices"/>
+<layout>
+<mainWindow>
+<info folder="true" part="devices">
+<folder activePageID="com.android.ide.eclipse.ddms.views.DeviceView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.DeviceView" label="Devices"/>
 <page content="com.android.ide.eclipse.ddms.views.DeviceView:*" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="devices">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1434" ratioRight="478" relationship="2" relative="devices">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="logcat" ratio="0.79978585" ratioLeft="747" ratioRight="187" relationship="4" relative="devices">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<info folder="true" part="logcat" ratio="0.79978585" ratioLeft="747" ratioRight="187" relationship="4" relative="devices">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="com.android.ide.eclipse.ddms.views.LogCatView:*" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.2996862" ratioLeft="573" ratioRight="1339" relationship="2" relative="devices"/>
-<info folder="true" part="ddms-detail" ratio="0.49962658" ratioLeft="669" ratioRight="670" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="com.android.ide.eclipse.ddms.views.ThreadView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
+<info part="org.eclipse.ui.editorss" ratio="0.38007382" ratioLeft="515" ratioRight="840" relationship="2" relative="devices"/>
+<info folder="true" part="ddms-detail" ratio="0.49962658" ratioLeft="669" ratioRight="670" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.android.ide.eclipse.ddms.views.HeapView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.ThreadView" label="Threads"/>
 <page content="com.android.ide.eclipse.ddms.views.HeapView" label="Heap"/>
 <page content="com.android.ide.eclipse.ddms.views.AllocTrackerView" label="Allocation Tracker"/>
 <page content="com.android.ide.eclipse.ddms.views.NetworkStatsView" label="Network Statistics"/>
@@ -527,7 +531,8 @@
 <page content="com.android.ide.eclipse.ddms.views.EmulatorControlView" label="Emulator Control"/>
 <page content="com.android.ide.eclipse.ddms.views.SysInfoView" label="System Information"/>
 <page content="com.android.ide.eclipse.ddms.views.ThreadView:*" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
@@ -542,112 +547,14 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/LoginActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ApplicationContext.java"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android(Manifest.class"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.animation(Animator.class"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/websocket/SimpleWebSocketClient.java"/>
-</editors>
-<item historyLabel="70_WebSocketChatApp_ProtoBuf_MultiActivity Manifest" index="0"/>
-<item historyLabel="LoginActivity.java" index="1">
-<position/>
-</item>
-<item historyLabel="LoginActivity.java" index="1">
-<position/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="944" y="0"/>
-</item>
-<item historyLabel="Manifest.class" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="944" y="0"/>
-</item>
-<item historyLabel="Animator.class" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="944" y="0"/>
-</item>
-<item historyLabel="LoginActivity.java" index="1">
-<position/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1464" y="0"/>
-</item>
-<item historyLabel="SimpleWebSocketClient.java" index="5">
-<position/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1698" y="0"/>
-</item>
-<item historyLabel="LoginActivity.java" index="1">
-<position/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1464" y="0"/>
-</item>
-<item historyLabel="LoginActivity.java" index="1">
-<position/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1464" y="0"/>
-</item>
-<item historyLabel="SimpleWebSocketClient.java" index="5">
-<position info="not_deleted" x="1062" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1698" y="0"/>
-</item>
-<item historyLabel="LoginActivity.java" index="1">
-<position/>
-</item>
-<item historyLabel="SimpleWebSocketClient.java" index="5">
-<position info="not_deleted" x="1062" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1698" y="0"/>
-</item>
-<item historyLabel="SimpleWebSocketClient.java" index="5">
-<position info="not_deleted" x="1062" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1698" y="0"/>
-</item>
-<item historyLabel="LoginActivity.java" index="1">
-<position info="not_deleted" x="1415" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="823" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="868" y="0"/>
-</item>
-<item historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1065" y="0"/>
-</item>
-<item active="true" historyLabel="ApplicationContext.java" index="2">
-<position info="not_deleted" x="1101" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -658,8 +565,6 @@
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
 <trimItem IMemento.internal.id="bottom"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@23d05b1a"/>
-<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
 </trimArea>
 </trimLayout>
 </window>
@@ -667,44 +572,32 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LoginActivity.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/LoginActivity.java">
 <persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/LoginActivity.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Animator.class" tooltip="android.animation.Animator">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.animation(Animator.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Manifest.class" tooltip="android.Manifest">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android(Manifest.class"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ApplicationContext.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ApplicationContext.java">
 <persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ApplicationContext.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="WebSocketClient.class" tooltip="org.java_websocket.client.WebSocketClient">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/android_workspace\/70_WebSocketChatApp_ProtoBuf_MultiActivity\/libs\/Java-WebSocket-1.3.0.jar&lt;org.java_websocket.client(WebSocketClient.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SimpleWebSocketClient.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/websocket/SimpleWebSocketClient.java">
+<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/websocket/SimpleWebSocketClient.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="WebSocketImpl.class" tooltip="org.java_websocket.WebSocketImpl">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/android_workspace\/70_WebSocketChatApp_ProtoBuf_MultiActivity\/libs\/Java-WebSocket-1.3.0.jar&lt;org.java_websocket(WebSocketImpl.class"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/AndroidManifest.xml">
 <persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_login.xml" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/res/layout/activity_login.xml">
-<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/res/layout/activity_login.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/MainActivity.java">
+<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/MainActivity.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Looper.class" tooltip="android.os.Looper">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.os(Looper.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="im_list_item_select_even.xml" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/res/layout/im_list_item_select_even.xml">
+<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/res/layout/im_list_item_select_even.xml"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Handler.class" tooltip="android.os.Handler">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.os(Handler.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImMessageListActivity.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/ImMessageListActivity.java">
+<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/activity/ImMessageListActivity.java"/>
 </file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Message.class" tooltip="android.os.Message">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.os(Message.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Activity.class" tooltip="android.app.Activity">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.app(Activity.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractAccountAuthenticator.class" tooltip="android.accounts.AbstractAccountAuthenticator">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.accounts(AbstractAccountAuthenticator.class"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="AccessibilityServiceInfo.class" tooltip="android.accessibilityservice.AccessibilityServiceInfo">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;android.accessibilityservice(AccessibilityServiceInfo.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageProtoConverter.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/message/MessageProtoConverter.java">
-<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/message/MessageProtoConverter.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ClassLoader.class" tooltip="java.lang.ClassLoader">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=70_WebSocketChatApp_ProtoBuf_MultiActivity/R:\/node_workspace\/android\/adt-bundle-windows-x86_64-20131030\/sdk\/platforms\/android-17\/android.jar&lt;java.lang(ClassLoader.class"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImMessageListAdapter.java" tooltip="70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ui/ImMessageListAdapter.java">
+<persistable path="/70_WebSocketChatApp_ProtoBuf_MultiActivity/src/com/irelandken/chat/ui/ImMessageListAdapter.java"/>
 </file>
 </mruList>
 </workbench>

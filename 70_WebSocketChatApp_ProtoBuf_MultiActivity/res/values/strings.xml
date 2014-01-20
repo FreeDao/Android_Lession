@@ -9,5 +9,16 @@
     <color name="white">#ffffff</color>
     <color name="white2">#fffffa</color>
 	<color name="light">#e3e3dd</color>
+	
+	<color name="light_gray">#f7f7f7</color>
+	<color name="gray">#555555</color>
+	<color name="gray2">#ebebeb</color>
+	<color name="text_gray">#999999</color>
+	
+	<color name="_7F090040">#7F090040</color>
+	<color name="_7F09000A">#7F09000A</color>
+	<color name="_7F090009">#7F090009</color>
+	
+	
 
 </resources>

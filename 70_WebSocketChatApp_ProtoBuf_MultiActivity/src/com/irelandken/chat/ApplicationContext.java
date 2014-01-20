@@ -5,6 +5,7 @@ import java.net.URISyntaxException;
 
 import org.java_websocket.drafts.Draft_17;
 
+import com.irelandken.chat.activity.ImMessageListActivity;
 import com.irelandken.chat.activity.LoginActivity;
 import com.irelandken.chat.activity.MainActivity;
 
@@ -24,7 +25,11 @@ public class ApplicationContext {
 	
 	public static LoginActivity LOGIN_ACTIVITY;
 	
+	public static ImMessageListActivity IM_LIST_ACTIVITY;
+	
 	public static MainActivity MAIN_ACTIVITY;
+	
+	public static String CURRENT_USER;
 	
 	
 	public static SimpleWebSocketClient WEB_SOCKET_CLIENT;
@@ -37,7 +42,7 @@ public class ApplicationContext {
 		
 		if(WEB_SOCKET_CLIENT == null) {
 			try {
-				WEB_SOCKET_CLIENT = new SimpleWebSocketClient( new URI( "ws://183.4.2.41/" ), new Draft_17());
+				WEB_SOCKET_CLIENT = new SimpleWebSocketClient( new URI( "ws://192.168.191.1/" ), new Draft_17());
 			} catch (URISyntaxException e) {
 				e.printStackTrace();
 				return false;

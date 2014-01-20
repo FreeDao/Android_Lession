@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="com.example.test.R.id"/>
 <fullyQualifiedTypeName name="com.irelandken.activity.UICodeActivity"/>
 <fullyQualifiedTypeName name="android.widget.LinearLayout"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.widget.EditText"/>
 <fullyQualifiedTypeName name="android.net.Uri"/>
 <fullyQualifiedTypeName name="com.irelandken.intent.R.id"/>
@@ -56,6 +55,9 @@
 <fullyQualifiedTypeName name="android.app.Application"/>
 <fullyQualifiedTypeName name="com.irelandken.chat.activity.LoginActivity"/>
 <fullyQualifiedTypeName name="com.irelandken.chat.activity.MainActivity"/>
-<fullyQualifiedTypeName name="com.irelandken.chat.ApplicationContext"/>
 <fullyQualifiedTypeName name="com.irelandken.chat.message.Message"/>
+<fullyQualifiedTypeName name="com.irelandken.chat.activity.ImMessageListActivity"/>
+<fullyQualifiedTypeName name="com.irelandken.chat.ui.ImMessageListAdapter"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="com.irelandken.chat.ApplicationContext"/>
 </qualifiedTypeNameHistroy>

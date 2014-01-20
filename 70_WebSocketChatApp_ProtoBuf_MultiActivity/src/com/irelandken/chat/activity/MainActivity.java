@@ -8,7 +8,6 @@ import java.util.Map;
 import com.irelandken.chat.ApplicationContext;
 import com.irelandken.chat.R;
 import com.irelandken.chat.message.Message;
-import com.irelandken.chat.message.MessageProtoConverter;
 import com.irelandken.chat.ui.ChatMessageListAdapter;
 
 import android.os.Bundle;
@@ -102,7 +101,7 @@ public class MainActivity extends Activity {
 				
 				Message message = new Message();
 				message.setType(Message.TYPE_TEXT);
-				message.setTo("tom");
+				message.setTo(ApplicationContext.CURRENT_USER);
 				message.setContent(msg);
 				
 				if(ApplicationContext.WEB_SOCKET_CLIENT != null) {

@@ -85,7 +85,7 @@ public class LoginActivity extends Activity {
 					Intent intent = new Intent();
 					
 					//设置打开OtherActivity
-					intent.setClass(LoginActivity.this, MainActivity.class);
+					intent.setClass(LoginActivity.this, ImMessageListActivity.class);
 					
 					//传送数据
 					//intent.putExtra("username", "xxx");

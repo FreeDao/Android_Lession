@@ -14,3 +14,15 @@
 1389670767169	Rename field 'messageReceiveHandler'
 1389670773259	Rename method 'getMessageReceiveHandler'
 1389856527504	Rename local variable 'msgEdit'
+1389925521338	Copy file
+1389926248887	Copy file
+1389926532628	Copy file
+1389926641937	Copy file
+1389927086172	Move files
+1389929565984	Copy compilation unit
+1389930126164	Copy compilation unit
+1389930501509	Rename local variable 'map'
+1389930602872	Rename field 'messageListAdapter'
+1389930649458	Delete element
+1389941906386	Rename local variable 'msgView'
+1389941949016	Rename local variable 'msgView'
