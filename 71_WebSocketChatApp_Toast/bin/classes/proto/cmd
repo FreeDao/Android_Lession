@@ -1,0 +1,2 @@
+protoc   -I={输入目录}   --cpp_out={输出目录}   *.proto
+protoc.exe -I=.\ --java_out=..\ Message.proto
