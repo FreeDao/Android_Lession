@@ -120,15 +120,12 @@ public class ImMessageListActivity extends Activity {
 		//设置窗口显示的动画
 		popupWindow.setAnimationStyle(R.style.popup_win_animation);
 		
-		//事件绑定
+		//事件绑定(退出程序)
 		Button exitBtn = (Button) popupWindowView.findViewById(R.id.exitBtn);
 		exitBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				//隐藏弹出窗口
-				if(popupWindow.isShowing()) {
-					popupWindow.dismiss();
-				}
+				ApplicationContext.exit();
 			}
 		});
 	}

@@ -109,4 +109,14 @@ public class ApplicationContext {
 			return;
 		}
 	}
+	
+	/**
+	 * 退出程序
+	 */
+	public static void exit() {
+		WEB_SOCKET_CLIENT.close();
+		
+		IM_LIST_ACTIVITY.finish();
+		LOGIN_ACTIVITY.finish();
+	}
 }
