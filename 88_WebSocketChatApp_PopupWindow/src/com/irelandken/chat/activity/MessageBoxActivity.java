@@ -103,6 +103,9 @@ public class MessageBoxActivity extends Activity {
 		createPopupWindow();
 	}
 	
+	/**
+	 * 创建“退出”弹出窗口
+	 */
 	private void createPopupWindow() {
 		
 		LayoutInflater mInflater = super.getLayoutInflater();
