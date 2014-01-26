@@ -59,6 +59,7 @@ class ExampleClient2 extends WebSocketClient {
 public class WebSocketClientBlockingTest {
 
 	public static void main( String[] args ) throws URISyntaxException, InterruptedException {
+		//注意，WebSocketClient不可以复用
 		ExampleClient2 c = new ExampleClient2( new URI( "ws://127.0.0.1/" ), new Draft_17() ); // more about drafts here: http://github.com/TooTallNate/Java-WebSocket/wiki/Drafts
 		boolean success = c.connectBlocking();
 		

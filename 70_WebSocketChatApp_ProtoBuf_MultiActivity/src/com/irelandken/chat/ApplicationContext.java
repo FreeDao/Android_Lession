@@ -48,8 +48,13 @@ public class ApplicationContext {
 				return false;
 			}
 		}
-		
-		WEB_SOCKET_CLIENT.connect();
+		boolean connected = false;
+		try {
+			connected = WEB_SOCKET_CLIENT.connectBlocking();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		return true;
 	}
