@@ -123,11 +123,14 @@ public class MainActivity extends Activity {
 			}
 		});
 		
-		Button personInfoBtn = (Button) super.findViewById(R.id.personInfoBtn);
-		personInfoBtn.setOnClickListener(new View.OnClickListener() {
+		/**
+		 * 退出当前会话，返回到消息列表
+		 */
+		Button backBtn = (Button) super.findViewById(R.id.backBtn);
+		backBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				ApplicationContext.webSocketConnectSync();
+				MainActivity.this.finish();
 			}
 		});
 		
