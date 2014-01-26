@@ -13,12 +13,18 @@ import com.irelandken.chat.ui.ImMessageListAdapter;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.Gravity;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.app.Activity;
+import android.graphics.drawable.BitmapDrawable;
 
 /**
  * @See http://blog.csdn.net/manoel/article/details/7582454
@@ -34,14 +40,9 @@ public class ImMessageListActivity extends Activity {
 	
 	public static final int MESSAGE_RECEIVED = 1;
 	
-	private Handler messageHandler;
-
-	/**
-	 * @return 当前Activity关于main thread的Handler
-	 */
-	public Handler getMessageHandler() {
-		return messageHandler;
-	}
+	private PopupWindow popupWindow;
+	
+	private View mainView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,31 +53,8 @@ public class ImMessageListActivity extends Activity {
 		
 		ApplicationContext.IM_LIST_ACTIVITY = this;
 		
-		
-		//主线程的Looper: 消息循环
-		Looper uiLooper = Looper.myLooper();
-		
-		/**
-		 * 从Looper的MessageQueue取出信息，然后显示信息的Handler
-		 */
-/*		messageHandler = new Handler(uiLooper, new Handler.Callback() {
-			
-			@Override
-			public boolean handleMessage(android.os.Message msg) {
-				System.out.println("[Showing Msg]:" + msg.obj);
-				
-				Map<String,Object> map = new HashMap<String,Object>(2);
-				map.put("msg", msg.obj);
-				map.put("type", ChatMessageListAdapter.TYPE_LEFT_TEXT);
-				
-				ImMessageListActivity.this.messageList.add(map);
-				
-				//通知ListView, Data已改变, 刷新ListView
-				ImMessageListActivity.this.messageListAdapter.notifyDataSetChanged();
-				
-				return true;
-			}
-		});*/
+		//主窗口
+		mainView = super.findViewById(R.id.imMessageListMainView);
 		
 		//配置ListView
 		messageListView = (ListView) super.findViewById(R.id.imMessageList);
@@ -121,50 +99,52 @@ public class ImMessageListActivity extends Activity {
 		imMessageListAdapter = new ImMessageListAdapter(this, messageList);
 		messageListView.setAdapter(imMessageListAdapter);
 		
-		/*Button sendBtn = (Button) super.findViewById(R.id.sendBtn);
-		sendBtn.setOnClickListener(new View.OnClickListener() {
+		createPopupWindow();
+	}
+	
+	private void createPopupWindow() {
+		
+		LayoutInflater mInflater = super.getLayoutInflater();
+        
+		View popupWindowView = mInflater.inflate(R.layout.exit_popwin, null);
+			
+		popupWindow = new PopupWindow(popupWindowView, 
+											ViewGroup.LayoutParams.MATCH_PARENT, 
+											ViewGroup.LayoutParams.WRAP_CONTENT);
+		
+		//为什么设置下面这行后，点击PopupWindow 外部区域时，PopupWindow消失
+		popupWindow.setBackgroundDrawable(new BitmapDrawable());
+		//取得焦点(使按钮可用等),PS:弹出窗口是模态的
+		popupWindow.setFocusable(true);
+		
+		//设置窗口显示的动画
+		popupWindow.setAnimationStyle(R.style.popup_win_animation);
+		
+		//事件绑定
+		Button exitBtn = (Button) popupWindowView.findViewById(R.id.exitBtn);
+		exitBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				
-				EditText msgEdit = (EditText) ImMessageListActivity.this.findViewById(R.id.msgEdit);
-				
-				String msg = msgEdit.getText().toString();
-				
-				if(msg.length() == 0) {
-					return;
-				}
-				
-				Message message = new Message();
-				message.setType(Message.TYPE_TEXT);
-				message.setTo("tom");
-				message.setContent(msg);
-				
-				if(ApplicationContext.WEB_SOCKET_CLIENT != null) {
-					
-					ApplicationContext.sendMessage(message);
-					
-					Map<String,Object> map = new HashMap<String,Object>(2);
-					map.put("msg", msg);
-					map.put("type", ChatMessageListAdapter.TYPE_RIGHT_TEXT);
-					
-					messageList.add(map);
-					
-					//通知ListView, Data已改变, 刷新ListView
-					messageListAdapter.notifyDataSetChanged();
-					
-					//清空输入框
-					msgEdit.setText("");
+				//隐藏弹出窗口
+				if(popupWindow.isShowing()) {
+					popupWindow.dismiss();
 				}
 			}
 		});
+	}
+
+	@Override
+	public boolean onKeyUp(int keyCode, KeyEvent event) {
+		if(keyCode == KeyEvent.KEYCODE_MENU) {
+			openPopupWindow();
+		}
+		return super.onKeyUp(keyCode, event);
+	}
+
+	private void openPopupWindow() {
 		
-		Button personInfoBtn = (Button) super.findViewById(R.id.personInfoBtn);
-		personInfoBtn.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				ApplicationContext.webSocketConnect();
-			}
-		});*/
+		//显示在主界面底部居中的位置
+		popupWindow.showAtLocation(mainView, Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 0);
 		
 	}
 }
