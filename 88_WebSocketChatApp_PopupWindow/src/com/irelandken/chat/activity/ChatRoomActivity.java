@@ -21,10 +21,11 @@ import android.widget.ListView;
 import android.app.Activity;
 
 /**
+ * 聊天窗口
  * @See http://blog.csdn.net/manoel/article/details/7582454
  * @author kenzfliang
  */
-public class MainActivity extends Activity {
+public class ChatRoomActivity extends Activity {
 
 	private List<Map<String, Object>> messageList;
 	
@@ -69,10 +70,10 @@ public class MainActivity extends Activity {
 				map.put("msg", msg.obj);
 				map.put("type", ChatMessageListAdapter.TYPE_LEFT_TEXT);
 				
-				MainActivity.this.messageList.add(map);
+				ChatRoomActivity.this.messageList.add(map);
 				
 				//通知ListView, Data已改变, 刷新ListView
-				MainActivity.this.messageListAdapter.notifyDataSetChanged();
+				ChatRoomActivity.this.messageListAdapter.notifyDataSetChanged();
 				
 				return true;
 			}
@@ -91,7 +92,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
-				EditText msgEdit = (EditText) MainActivity.this.findViewById(R.id.msgEdit);
+				EditText msgEdit = (EditText) ChatRoomActivity.this.findViewById(R.id.msgEdit);
 				
 				String msg = msgEdit.getText().toString();
 				
@@ -130,7 +131,7 @@ public class MainActivity extends Activity {
 		backBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				MainActivity.this.finish();
+				ChatRoomActivity.this.finish();
 			}
 		});
 		

@@ -27,10 +27,11 @@ import android.app.Activity;
 import android.graphics.drawable.BitmapDrawable;
 
 /**
+ * 消息盒子窗口
  * @See http://blog.csdn.net/manoel/article/details/7582454
  * @author kenzfliang
  */
-public class ImMessageListActivity extends Activity {
+public class MessageBoxActivity extends Activity {
 
 	private List<Map<String, Object>> messageList;
 	

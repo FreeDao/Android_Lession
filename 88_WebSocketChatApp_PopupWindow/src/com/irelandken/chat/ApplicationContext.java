@@ -5,9 +5,9 @@ import java.net.URISyntaxException;
 
 import org.java_websocket.drafts.Draft_17;
 
-import com.irelandken.chat.activity.ImMessageListActivity;
+import com.irelandken.chat.activity.MessageBoxActivity;
 import com.irelandken.chat.activity.LoginActivity;
-import com.irelandken.chat.activity.MainActivity;
+import com.irelandken.chat.activity.ChatRoomActivity;
 
 import com.irelandken.chat.message.Message;
 import com.irelandken.chat.message.MessageProtoConverter;
@@ -25,9 +25,9 @@ public class ApplicationContext {
 	
 	public static LoginActivity LOGIN_ACTIVITY;
 	
-	public static ImMessageListActivity IM_LIST_ACTIVITY;
+	public static MessageBoxActivity IM_LIST_ACTIVITY;
 	
-	public static MainActivity MAIN_ACTIVITY;
+	public static ChatRoomActivity MAIN_ACTIVITY;
 	
 	public static String CURRENT_USER;
 	
@@ -101,7 +101,7 @@ public class ApplicationContext {
 		
 		if(message.getType() == Message.TYPE_TEXT) {
 			
-			android.os.Message msg = android.os.Message.obtain(MAIN_ACTIVITY.getMessageHandler(), MainActivity.MESSAGE_RECEIVED, 0, 0, message.getContent());
+			android.os.Message msg = android.os.Message.obtain(MAIN_ACTIVITY.getMessageHandler(), ChatRoomActivity.MESSAGE_RECEIVED, 0, 0, message.getContent());
 			
 			//给主线程的Looper插入一条消息
 			msg.sendToTarget();

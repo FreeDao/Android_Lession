@@ -6,7 +6,7 @@ import java.util.Map;
 import com.irelandken.chat.ApplicationContext;
 import com.irelandken.chat.R;
 import com.irelandken.chat.activity.LoginActivity;
-import com.irelandken.chat.activity.MainActivity;
+import com.irelandken.chat.activity.ChatRoomActivity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -105,7 +105,7 @@ public class ImMessageListAdapter extends BaseAdapter {
 					Intent intent = new Intent();
 					
 					//设置打开OtherActivity
-					intent.setClass(ApplicationContext.IM_LIST_ACTIVITY, MainActivity.class);
+					intent.setClass(ApplicationContext.IM_LIST_ACTIVITY, ChatRoomActivity.class);
 					
 					TextView friendNameView = (TextView) v.getTag();
 					
